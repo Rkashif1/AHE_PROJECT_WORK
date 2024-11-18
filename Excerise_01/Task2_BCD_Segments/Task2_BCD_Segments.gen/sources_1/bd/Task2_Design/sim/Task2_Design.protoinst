@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Task2_Design": {
+			"proto_instances": {
+			}
+		}
+	}
+}

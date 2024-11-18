@@ -1,0 +1,398 @@
+
+*** Running vivado
+    with args -log Task2_Design_FourBitAdder_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Task2_Design_FourBitAdder_0_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Task2_Design_FourBitAdder_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 437.961 ; gain = 161.395
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FullAdder/SwitchingIP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FullAdder/OneBitAdderIP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FullAdder/FourBitAdderIP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FullAdder/SegControl_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FullAdder/BCD_5in_8out_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Task2_Design_FourBitAdder_0_0
+Command: synth_design -top Task2_Design_FourBitAdder_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14064
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1283.523 ; gain = 409.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Task2_Design_FourBitAdder_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/synth/Task2_Design_FourBitAdder_0_0.vhd:64]
+INFO: [Synth 8-3491] module 'FourBitAdder' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:15' bound to instance 'U0' of component 'FourBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/synth/Task2_Design_FourBitAdder_0_0.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'FourBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:27]
+INFO: [Synth 8-3491] module 'FourBitAdder_OneBitAdder_0_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_0/synth/FourBitAdder_OneBitAdder_0_0.vhd:56' bound to instance 'OneBitAdder_0' of component 'FourBitAdder_OneBitAdder_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'FourBitAdder_OneBitAdder_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_0/synth/FourBitAdder_OneBitAdder_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'OneBitAdder' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/src/OneBitAdder.vhd:34' bound to instance 'U0' of component 'OneBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_0/synth/FourBitAdder_OneBitAdder_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'OneBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/src/OneBitAdder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'OneBitAdder' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/src/OneBitAdder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'FourBitAdder_OneBitAdder_0_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_0/synth/FourBitAdder_OneBitAdder_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'FourBitAdder_OneBitAdder_0_1' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_1/synth/FourBitAdder_OneBitAdder_0_1.vhd:56' bound to instance 'OneBitAdder_1' of component 'FourBitAdder_OneBitAdder_0_1' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'FourBitAdder_OneBitAdder_0_1' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_1/synth/FourBitAdder_OneBitAdder_0_1.vhd:66]
+INFO: [Synth 8-3491] module 'OneBitAdder' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/src/OneBitAdder.vhd:34' bound to instance 'U0' of component 'OneBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_1/synth/FourBitAdder_OneBitAdder_0_1.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'FourBitAdder_OneBitAdder_0_1' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_1/synth/FourBitAdder_OneBitAdder_0_1.vhd:66]
+INFO: [Synth 8-3491] module 'FourBitAdder_OneBitAdder_0_2' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_2/synth/FourBitAdder_OneBitAdder_0_2.vhd:56' bound to instance 'OneBitAdder_2' of component 'FourBitAdder_OneBitAdder_0_2' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'FourBitAdder_OneBitAdder_0_2' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_2/synth/FourBitAdder_OneBitAdder_0_2.vhd:66]
+INFO: [Synth 8-3491] module 'OneBitAdder' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/src/OneBitAdder.vhd:34' bound to instance 'U0' of component 'OneBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_2/synth/FourBitAdder_OneBitAdder_0_2.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'FourBitAdder_OneBitAdder_0_2' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_2/synth/FourBitAdder_OneBitAdder_0_2.vhd:66]
+INFO: [Synth 8-3491] module 'FourBitAdder_OneBitAdder_0_3' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/synth/FourBitAdder_OneBitAdder_0_3.vhd:56' bound to instance 'OneBitAdder_3' of component 'FourBitAdder_OneBitAdder_0_3' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'FourBitAdder_OneBitAdder_0_3' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/synth/FourBitAdder_OneBitAdder_0_3.vhd:66]
+INFO: [Synth 8-3491] module 'OneBitAdder' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/src/OneBitAdder.vhd:34' bound to instance 'U0' of component 'OneBitAdder' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/synth/FourBitAdder_OneBitAdder_0_3.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'FourBitAdder_OneBitAdder_0_3' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_OneBitAdder_0_3/synth/FourBitAdder_OneBitAdder_0_3.vhd:66]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlconcat_0_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconcat_0_0/synth/FourBitAdder_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'FourBitAdder_xlconcat_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:183]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlconcat_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconcat_0_0/synth/FourBitAdder_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconcat_0_0/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconcat_0_0/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlconcat_0_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconcat_0_0/synth/FourBitAdder_xlconcat_0_0.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlconstant_0_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconstant_0_0/synth/FourBitAdder_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'FourBitAdder_xlconstant_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:192]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlconstant_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconstant_0_0/synth/FourBitAdder_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlconstant_0_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlconstant_0_0/synth/FourBitAdder_xlconstant_0_0.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_0_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_0/synth/FourBitAdder_xlslice_0_0.v:53' bound to instance 'xlslice_0' of component 'FourBitAdder_xlslice_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:196]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_0_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_0/synth/FourBitAdder_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_0_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_0/synth/FourBitAdder_xlslice_0_0.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_0_1' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_1/synth/FourBitAdder_xlslice_0_1.v:53' bound to instance 'xlslice_1' of component 'FourBitAdder_xlslice_0_1' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:201]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_0_1' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_1/synth/FourBitAdder_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_0_1' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_1/synth/FourBitAdder_xlslice_0_1.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_0_2' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_2/synth/FourBitAdder_xlslice_0_2.v:53' bound to instance 'xlslice_2' of component 'FourBitAdder_xlslice_0_2' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:206]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_0_2' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_2/synth/FourBitAdder_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_0_2' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_2/synth/FourBitAdder_xlslice_0_2.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_0_3' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_3/synth/FourBitAdder_xlslice_0_3.v:53' bound to instance 'xlslice_3' of component 'FourBitAdder_xlslice_0_3' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:211]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_0_3' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_3/synth/FourBitAdder_xlslice_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_0_3' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_3/synth/FourBitAdder_xlslice_0_3.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_0_4' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_4/synth/FourBitAdder_xlslice_0_4.v:53' bound to instance 'xlslice_4' of component 'FourBitAdder_xlslice_0_4' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:216]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_0_4' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_4/synth/FourBitAdder_xlslice_0_4.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_0_4' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_0_4/synth/FourBitAdder_xlslice_0_4.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_1_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_1_0/synth/FourBitAdder_xlslice_1_0.v:53' bound to instance 'xlslice_5' of component 'FourBitAdder_xlslice_1_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:221]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_1_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_1_0/synth/FourBitAdder_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_1_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_1_0/synth/FourBitAdder_xlslice_1_0.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_2_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_2_0/synth/FourBitAdder_xlslice_2_0.v:53' bound to instance 'xlslice_6' of component 'FourBitAdder_xlslice_2_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:226]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_2_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_2_0/synth/FourBitAdder_xlslice_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_2_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_2_0/synth/FourBitAdder_xlslice_2_0.v:53]
+INFO: [Synth 8-3491] module 'FourBitAdder_xlslice_3_0' declared at 'c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/synth/FourBitAdder_xlslice_3_0.v:53' bound to instance 'xlslice_7' of component 'FourBitAdder_xlslice_3_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:231]
+INFO: [Synth 8-6157] synthesizing module 'FourBitAdder_xlslice_3_0' [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/synth/FourBitAdder_xlslice_3_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'FourBitAdder_xlslice_3_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_xlslice_3_0/synth/FourBitAdder_xlslice_3_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'FourBitAdder' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ipshared/5d82/src/FourBitAdder.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Task2_Design_FourBitAdder_0_0' (0#1) [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/synth/Task2_Design_FourBitAdder_0_0.vhd:64]
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.211 ; gain = 503.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.211 ; gain = 503.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.211 ; gain = 503.641
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1377.211 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.gen/sources_1/bd/Task2_Design/ip/Task2_Design_FourBitAdder_0_0/src/FourBitAdder_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_FourBitAdder_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_FourBitAdder_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1447.910 ; gain = 0.027
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_FourBitAdder_0_0_synth_1/dont_touch.xdc, line 51).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/OneBitAdder_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/OneBitAdder_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/OneBitAdder_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/OneBitAdder_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |LUT3 |     6|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1447.910 ; gain = 574.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1447.910 ; gain = 503.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1447.910 ; gain = 574.340
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1447.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b746d23b
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1447.910 ; gain = 973.711
+INFO: [Common 17-1381] The checkpoint 'C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_FourBitAdder_0_0_synth_1/Task2_Design_FourBitAdder_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Task2_Design_FourBitAdder_0_0, cache-ID = bd9c09218cc7f78d
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_FourBitAdder_0_0_synth_1/Task2_Design_FourBitAdder_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Task2_Design_FourBitAdder_0_0_utilization_synth.rpt -pb Task2_Design_FourBitAdder_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 16:12:17 2024...

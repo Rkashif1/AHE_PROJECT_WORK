@@ -1,0 +1,252 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3FBD775B857D384D",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Task2_BCD_Segments.gen/sources_1/bd/Task2_Design",
+      "name": "Task2_Design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "FourBitAdder_0": "",
+      "BCD_5in_8out_0": "",
+      "SegControl_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "Switching_Control_0": "",
+      "clk_wiz": "",
+      "reset_inv_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Task2_Design_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "SegOut": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "SegAN": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "InputA": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "InputB": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "FourBitAdder_0": {
+        "vlnv": "Youssef:user:FourBitAdder:1.0",
+        "xci_name": "Task2_Design_FourBitAdder_0_0",
+        "xci_path": "ip\\Task2_Design_FourBitAdder_0_0\\Task2_Design_FourBitAdder_0_0.xci",
+        "inst_hier_path": "FourBitAdder_0"
+      },
+      "BCD_5in_8out_0": {
+        "vlnv": "Youssef:user:BCD_5in_8out:1.0",
+        "xci_name": "Task2_Design_BCD_5in_8out_0_0",
+        "xci_path": "ip\\Task2_Design_BCD_5in_8out_0_0\\Task2_Design_BCD_5in_8out_0_0.xci",
+        "inst_hier_path": "BCD_5in_8out_0"
+      },
+      "SegControl_0": {
+        "vlnv": "Youssef:user:SegControl:1.0",
+        "xci_name": "Task2_Design_SegControl_0_0",
+        "xci_path": "ip\\Task2_Design_SegControl_0_0\\Task2_Design_SegControl_0_0.xci",
+        "inst_hier_path": "SegControl_0"
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "Task2_Design_xlslice_0_0",
+        "xci_path": "ip\\Task2_Design_xlslice_0_0\\Task2_Design_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "Task2_Design_xlslice_1_0",
+        "xci_path": "ip\\Task2_Design_xlslice_1_0\\Task2_Design_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "Switching_Control_0": {
+        "vlnv": "hshl.net:user:Switching_Control:1.0",
+        "xci_name": "Task2_Design_Switching_Control_0_0",
+        "xci_path": "ip\\Task2_Design_Switching_Control_0_0\\Task2_Design_Switching_Control_0_0.xci",
+        "inst_hier_path": "Switching_Control_0"
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "Task2_Design_clk_wiz_0",
+        "xci_path": "ip\\Task2_Design_clk_wiz_0\\Task2_Design_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "reset_inv_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "Task2_Design_reset_inv_0_0",
+        "xci_path": "ip\\Task2_Design_reset_inv_0_0\\Task2_Design_reset_inv_0_0.xci",
+        "inst_hier_path": "reset_inv_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BCD_5in_8out_0_BCD_OUT": {
+        "ports": [
+          "BCD_5in_8out_0/BCD_OUT",
+          "xlslice_0/Din",
+          "xlslice_1/Din"
+        ]
+      },
+      "FourBitAdder_0_SumOut": {
+        "ports": [
+          "FourBitAdder_0/SumOut",
+          "BCD_5in_8out_0/BIN"
+        ]
+      },
+      "InputA_1": {
+        "ports": [
+          "InputA",
+          "FourBitAdder_0/InputA"
+        ]
+      },
+      "InputB_1": {
+        "ports": [
+          "InputB",
+          "FourBitAdder_0/InputB"
+        ]
+      },
+      "SegControl_0_SegAN": {
+        "ports": [
+          "SegControl_0/SegAN",
+          "SegAN"
+        ]
+      },
+      "SegControl_0_SegOut": {
+        "ports": [
+          "SegControl_0/SegOut",
+          "SegOut"
+        ]
+      },
+      "Switching_Control_0_CtrlBit": {
+        "ports": [
+          "Switching_Control_0/CtrlBit",
+          "SegControl_0/ControlBit"
+        ]
+      },
+      "clk_wiz_clk_out1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "Switching_Control_0/clkIn"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "reset_inv_0/Op1"
+        ]
+      },
+      "reset_inv_0_Res": {
+        "ports": [
+          "reset_inv_0/Res",
+          "clk_wiz/reset"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "SegControl_0/OnesBits"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "SegControl_0/TensBits"
+        ]
+      }
+    }
+  }
+}

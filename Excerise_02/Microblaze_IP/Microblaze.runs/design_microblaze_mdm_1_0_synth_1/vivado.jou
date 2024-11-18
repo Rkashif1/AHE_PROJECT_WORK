@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Sun Nov 17 22:09:25 2024
+# Process ID: 18748
+# Current directory: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_mdm_1_0_synth_1
+# Command line: vivado.exe -log design_microblaze_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_microblaze_mdm_1_0.tcl
+# Log file: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_mdm_1_0_synth_1/design_microblaze_mdm_1_0.vds
+# Journal file: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_mdm_1_0_synth_1\vivado.jou
+# Running On: DESKTOP-4ADHA59, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8376 MB
+#-----------------------------------------------------------
+source design_microblaze_mdm_1_0.tcl -notrace

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Sun Nov 17 22:15:24 2024
+# Process ID: 21104
+# Current directory: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log design_microblaze_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_microblaze_ilmb_v10_0.tcl
+# Log file: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0.vds
+# Journal file: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1\vivado.jou
+# Running On: DESKTOP-4ADHA59, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8376 MB
+#-----------------------------------------------------------
+source design_microblaze_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 462.070 ; gain = 184.242
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_microblaze_ilmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d2dbc0fe69c3e8ec to dir: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.cache/ip/2023.2.2/d/2/d2dbc0fe69c3e8ec/design_microblaze_dlmb_v10_0.dcp to C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.cache/ip/2023.2.2/d/2/d2dbc0fe69c3e8ec/design_microblaze_dlmb_v10_0_sim_netlist.v to C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.cache/ip/2023.2.2/d/2/d2dbc0fe69c3e8ec/design_microblaze_dlmb_v10_0_sim_netlist.vhdl to C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.cache/ip/2023.2.2/d/2/d2dbc0fe69c3e8ec/design_microblaze_dlmb_v10_0_stub.v to C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.cache/ip/2023.2.2/d/2/d2dbc0fe69c3e8ec/design_microblaze_dlmb_v10_0_stub.vhdl to C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_microblaze_ilmb_v10_0, cache-ID = d2dbc0fe69c3e8ec.
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 22:15:44 2024...

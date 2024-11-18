@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Nov 14 18:04:12 2024
+# Process ID: 5112
+# Current directory: C:/FullAdder/Task1_ADDER
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10404 C:\FullAdder\Task1_ADDER\Task1_ADDER.xpr
+# Log file: C:/FullAdder/Task1_ADDER/vivado.log
+# Journal file: C:/FullAdder/Task1_ADDER\vivado.jou
+# Running On: HSHL2NBIBL050, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/FullAdder/Task1_ADDER/Task1_ADDER.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/FullAdder/Task1_ADDER/Task1_ADDER.srcs/sources_1/bd/FourBitAdder/FourBitAdder.bd}

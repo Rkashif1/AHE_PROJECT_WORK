@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Task2_Design_clk_wiz_0_synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Task2_Design_SegControl_0_0_synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_SegControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Task2_Design_reset_inv_0_0_synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_reset_inv_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Task2_Design_BCD_5in_8out_0_0_synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_BCD_5in_8out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Task2_Design_FourBitAdder_0_0_synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_FourBitAdder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Task2_Design_Switching_Control_0_0_synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/Task2_Design_Switching_Control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/FullAdder/Task2_BCD_Segments/Task2_BCD_Segments.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="Task2_Design_clk_wiz_0_synth_1"/>
+		<Parent Id="Task2_Design_SegControl_0_0_synth_1"/>
+		<Parent Id="Task2_Design_reset_inv_0_0_synth_1"/>
+		<Parent Id="Task2_Design_BCD_5in_8out_0_0_synth_1"/>
+		<Parent Id="Task2_Design_FourBitAdder_0_0_synth_1"/>
+		<Parent Id="Task2_Design_Switching_Control_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

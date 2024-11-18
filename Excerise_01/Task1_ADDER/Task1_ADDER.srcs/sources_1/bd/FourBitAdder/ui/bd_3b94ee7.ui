@@ -1,0 +1,49 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"-320,-664",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace portBus InputA -pg 1 -lvl 0 -x -200 -y 140 -defaultsOSRD
+preplace portBus InputB -pg 1 -lvl 0 -x -200 -y -400 -defaultsOSRD
+preplace portBus SumOut -pg 1 -lvl 7 -x 1300 -y 30 -defaultsOSRD
+preplace inst OneBitAdder_0 -pg 1 -lvl 2 -x 280 -y 250 -defaultsOSRD
+preplace inst OneBitAdder_1 -pg 1 -lvl 3 -x 470 -y 170 -defaultsOSRD
+preplace inst OneBitAdder_2 -pg 1 -lvl 4 -x 770 -y 80 -defaultsOSRD
+preplace inst OneBitAdder_3 -pg 1 -lvl 5 -x 970 -y 0 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 80 -y 160 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 1190 -y 240 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 80 -y 60 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -x 80 -y -40 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -x 80 -y -140 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 1 -x 80 -y -280 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 1 -x 80 -y -410 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 1 -x 80 -y -520 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 1 -x 80 -y -650 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 80 -y 380 -defaultsOSRD
+preplace netloc InputA_1 1 0 1 -20 -140n
+preplace netloc InputB_1 1 0 1 -20 -650n
+preplace netloc xlslice_0_Dout 1 1 1 180 160n
+preplace netloc xlslice_1_Dout 1 1 2 NJ 60 370
+preplace netloc xlslice_2_Dout 1 1 3 NJ -40 NJ -40 560
+preplace netloc xlslice_3_Dout 1 1 4 NJ -140 NJ -140 NJ -140 860
+preplace netloc xlslice_4_Dout 1 1 1 190 -280n
+preplace netloc xlslice_5_Dout 1 1 2 NJ -410 380
+preplace netloc xlslice_6_Dout 1 1 3 NJ -520 NJ -520 570
+preplace netloc xlslice_7_Dout 1 1 4 NJ -650 NJ -650 NJ -650 870
+preplace netloc OneBitAdder_0_Cout 1 2 1 370 190n
+preplace netloc OneBitAdder_1_Cout 1 3 1 560 100n
+preplace netloc OneBitAdder_2_Cout 1 4 1 860 20n
+preplace netloc xlconstant_0_dout 1 1 1 180 270n
+preplace netloc OneBitAdder_0_Sum 1 2 4 NJ 260 NJ 260 NJ 260 1070
+preplace netloc OneBitAdder_1_Sum 1 3 3 NJ 180 NJ 180 1060
+preplace netloc OneBitAdder_2_Sum 1 4 2 NJ 90 1080
+preplace netloc OneBitAdder_3_Sum 1 5 1 1090 10n
+preplace netloc OneBitAdder_3_Cout 1 5 1 1100 -10n
+preplace netloc xlconcat_0_dout 1 6 1 1280 30n
+levelinfo -pg 1 -200 80 280 470 770 970 1190 1300
+pagesize -pg 1 -db -bbox -sgen -320 -710 1430 440
+"
+}
+

@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/FourBitAdder/ipshared/303e/src/OneBitAdder.vhd" \
+"../../../bd/FourBitAdder/ip/FourBitAdder_OneBitAdder_0_0/sim/FourBitAdder_OneBitAdder_0_0.vhd" \
+"../../../bd/FourBitAdder/ip/FourBitAdder_OneBitAdder_0_1/sim/FourBitAdder_OneBitAdder_0_1.vhd" \
+"../../../bd/FourBitAdder/ip/FourBitAdder_OneBitAdder_0_2/sim/FourBitAdder_OneBitAdder_0_2.vhd" \
+"../../../bd/FourBitAdder/ip/FourBitAdder_OneBitAdder_0_3/sim/FourBitAdder_OneBitAdder_0_3.vhd" \
+"../../../bd/FourBitAdder/sim/FourBitAdder.vhd" \
+
+# Do not sort compile order
+nosort

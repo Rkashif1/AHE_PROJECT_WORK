@@ -1,0 +1,341 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x221468B3A43CF40C",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Task1_ADDER.gen/sources_1/bd/FourBitAdder",
+      "name": "FourBitAdder",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "OneBitAdder_0": "",
+      "OneBitAdder_1": "",
+      "OneBitAdder_2": "",
+      "OneBitAdder_3": "",
+      "xlslice_0": "",
+      "xlconcat_0": "",
+      "xlslice_1": "",
+      "xlslice_2": "",
+      "xlslice_3": "",
+      "xlslice_4": "",
+      "xlslice_5": "",
+      "xlslice_6": "",
+      "xlslice_7": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "InputA": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "InputB": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SumOut": {
+        "direction": "O",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "5",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "OneBitAdder_0": {
+        "vlnv": "Youssef:user:OneBitAdder:1.0",
+        "xci_name": "FourBitAdder_OneBitAdder_0_0",
+        "xci_path": "ip\\FourBitAdder_OneBitAdder_0_0\\FourBitAdder_OneBitAdder_0_0.xci",
+        "inst_hier_path": "OneBitAdder_0"
+      },
+      "OneBitAdder_1": {
+        "vlnv": "Youssef:user:OneBitAdder:1.0",
+        "xci_name": "FourBitAdder_OneBitAdder_0_1",
+        "xci_path": "ip\\FourBitAdder_OneBitAdder_0_1\\FourBitAdder_OneBitAdder_0_1.xci",
+        "inst_hier_path": "OneBitAdder_1"
+      },
+      "OneBitAdder_2": {
+        "vlnv": "Youssef:user:OneBitAdder:1.0",
+        "xci_name": "FourBitAdder_OneBitAdder_0_2",
+        "xci_path": "ip\\FourBitAdder_OneBitAdder_0_2\\FourBitAdder_OneBitAdder_0_2.xci",
+        "inst_hier_path": "OneBitAdder_2"
+      },
+      "OneBitAdder_3": {
+        "vlnv": "Youssef:user:OneBitAdder:1.0",
+        "xci_name": "FourBitAdder_OneBitAdder_0_3",
+        "xci_path": "ip\\FourBitAdder_OneBitAdder_0_3\\FourBitAdder_OneBitAdder_0_3.xci",
+        "inst_hier_path": "OneBitAdder_3"
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_0_0",
+        "xci_path": "ip\\FourBitAdder_xlslice_0_0\\FourBitAdder_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "FourBitAdder_xlconcat_0_0",
+        "xci_path": "ip\\FourBitAdder_xlconcat_0_0\\FourBitAdder_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "5"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_0_1",
+        "xci_path": "ip\\FourBitAdder_xlslice_0_1\\FourBitAdder_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_0_2",
+        "xci_path": "ip\\FourBitAdder_xlslice_0_2\\FourBitAdder_xlslice_0_2.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_0_3",
+        "xci_path": "ip\\FourBitAdder_xlslice_0_3\\FourBitAdder_xlslice_0_3.xci",
+        "inst_hier_path": "xlslice_3",
+        "parameters": {
+          "DIN_TO": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_4": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_0_4",
+        "xci_path": "ip\\FourBitAdder_xlslice_0_4\\FourBitAdder_xlslice_0_4.xci",
+        "inst_hier_path": "xlslice_4",
+        "parameters": {
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_5": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_1_0",
+        "xci_path": "ip\\FourBitAdder_xlslice_1_0\\FourBitAdder_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_5",
+        "parameters": {
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_6": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_2_0",
+        "xci_path": "ip\\FourBitAdder_xlslice_2_0\\FourBitAdder_xlslice_2_0.xci",
+        "inst_hier_path": "xlslice_6",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_7": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "FourBitAdder_xlslice_3_0",
+        "xci_path": "ip\\FourBitAdder_xlslice_3_0\\FourBitAdder_xlslice_3_0.xci",
+        "inst_hier_path": "xlslice_7",
+        "parameters": {
+          "DIN_TO": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "FourBitAdder_xlconstant_0_0",
+        "xci_path": "ip\\FourBitAdder_xlconstant_0_0\\FourBitAdder_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "InputA_1": {
+        "ports": [
+          "InputA",
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din",
+          "xlslice_3/Din"
+        ]
+      },
+      "InputB_1": {
+        "ports": [
+          "InputB",
+          "xlslice_7/Din",
+          "xlslice_6/Din",
+          "xlslice_5/Din",
+          "xlslice_4/Din"
+        ]
+      },
+      "OneBitAdder_0_Cout": {
+        "ports": [
+          "OneBitAdder_0/Cout",
+          "OneBitAdder_1/Cin"
+        ]
+      },
+      "OneBitAdder_0_Sum": {
+        "ports": [
+          "OneBitAdder_0/Sum",
+          "xlconcat_0/In0"
+        ]
+      },
+      "OneBitAdder_1_Cout": {
+        "ports": [
+          "OneBitAdder_1/Cout",
+          "OneBitAdder_2/Cin"
+        ]
+      },
+      "OneBitAdder_1_Sum": {
+        "ports": [
+          "OneBitAdder_1/Sum",
+          "xlconcat_0/In1"
+        ]
+      },
+      "OneBitAdder_2_Cout": {
+        "ports": [
+          "OneBitAdder_2/Cout",
+          "OneBitAdder_3/Cin"
+        ]
+      },
+      "OneBitAdder_2_Sum": {
+        "ports": [
+          "OneBitAdder_2/Sum",
+          "xlconcat_0/In2"
+        ]
+      },
+      "OneBitAdder_3_Cout": {
+        "ports": [
+          "OneBitAdder_3/Cout",
+          "xlconcat_0/In4"
+        ]
+      },
+      "OneBitAdder_3_Sum": {
+        "ports": [
+          "OneBitAdder_3/Sum",
+          "xlconcat_0/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "SumOut"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "OneBitAdder_0/Cin"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "OneBitAdder_0/A"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "OneBitAdder_1/A"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "OneBitAdder_2/A"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "OneBitAdder_3/A"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "OneBitAdder_0/B"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "OneBitAdder_1/B"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "xlslice_6/Dout",
+          "OneBitAdder_2/B"
+        ]
+      },
+      "xlslice_7_Dout": {
+        "ports": [
+          "xlslice_7/Dout",
+          "OneBitAdder_3/B"
+        ]
+      }
+    }
+  }
+}
