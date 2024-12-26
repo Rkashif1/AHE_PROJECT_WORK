@@ -1,0 +1,9 @@
+axi_gpio_Button:
+- axi_gpio
+- gpio
+axi_gpio_LEd:
+- axi_gpio
+- gpio
+microblaze_0_axi_intc:
+- axi_intc
+- intc

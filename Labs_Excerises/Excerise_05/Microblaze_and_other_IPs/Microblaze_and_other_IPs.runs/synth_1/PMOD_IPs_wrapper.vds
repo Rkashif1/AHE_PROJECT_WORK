@@ -1,0 +1,441 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Nov 20 23:49:48 2024
+# Process ID: 15616
+# Current directory: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1
+# Command line: vivado.exe -log PMOD_IPs_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PMOD_IPs_wrapper.tcl
+# Log file: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/PMOD_IPs_wrapper.vds
+# Journal file: C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1\vivado.jou
+# Running On: DESKTOP-4ADHA59, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8376 MB
+#-----------------------------------------------------------
+source PMOD_IPs_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 462.012 ; gain = 184.391
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/ip_repo01'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.cache/ip 
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 485.695 ; gain = 15.375
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.srcs/utils_1/imports/synth_1/PMOD_IPs_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.srcs/utils_1/imports/synth_1/PMOD_IPs_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PMOD_IPs_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 1354.477 ; gain = 440.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_wrapper' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/hdl/PMOD_IPs_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'PMOD_IPs' declared at 'c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1584' bound to instance 'PMOD_IPs_i' of component 'PMOD_IPs' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/hdl/PMOD_IPs_wrapper.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1597]
+INFO: [Synth 8-3491] module 'PMOD_IPs_axi_gpio_0_3' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_axi_gpio_0_3_stub.vhdl:6' bound to instance 'axi_gpio_Button' of component 'PMOD_IPs_axi_gpio_0_3' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1905]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_axi_gpio_0_3' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_axi_gpio_0_3_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'PMOD_IPs_axi_gpio_1_2' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_axi_gpio_1_2_stub.vhdl:6' bound to instance 'axi_gpio_LEd' of component 'PMOD_IPs_axi_gpio_1_2' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1928]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_axi_gpio_1_2' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_axi_gpio_1_2_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'PMOD_IPs_clk_wiz_1_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_clk_wiz_1_1_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'PMOD_IPs_clk_wiz_1_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1951]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_clk_wiz_1_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_clk_wiz_1_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'PMOD_IPs_mdm_1_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_mdm_1_1_stub.vhdl:6' bound to instance 'mdm_1' of component 'PMOD_IPs_mdm_1_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1958]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_mdm_1_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_mdm_1_1_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'PMOD_IPs_microblaze_0_2' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_microblaze_0_2_stub.vhdl:6' bound to instance 'microblaze_0' of component 'PMOD_IPs_microblaze_0_2' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1971]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_microblaze_0_2' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_microblaze_0_2_stub.vhdl:64]
+INFO: [Synth 8-3491] module 'PMOD_IPs_microblaze_0_axi_intc_0' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_microblaze_0_axi_intc_0_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'PMOD_IPs_microblaze_0_axi_intc_0' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:2057]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_microblaze_0_axi_intc_0' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_microblaze_0_axi_intc_0_stub.vhdl:37]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_microblaze_0_axi_periph_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1072]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1H4DX5N' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1H4DX5N' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_M8M2UY' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_M8M2UY' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1FS5A54' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1FS5A54' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:260]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_JI48D5' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:923]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_JI48D5' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:923]
+INFO: [Synth 8-3491] module 'PMOD_IPs_xbar_0' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'PMOD_IPs_xbar_0' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1502]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_xbar_0' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-256] done synthesizing module 'PMOD_IPs_microblaze_0_axi_periph_1' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1072]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_T4VTR3' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:344]
+INFO: [Synth 8-3491] module 'PMOD_IPs_dlmb_bram_if_cntlr_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_dlmb_bram_if_cntlr_1_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'PMOD_IPs_dlmb_bram_if_cntlr_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:558]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_dlmb_bram_if_cntlr_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_dlmb_bram_if_cntlr_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'PMOD_IPs_dlmb_v10_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_dlmb_v10_1_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'PMOD_IPs_dlmb_v10_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:612]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_dlmb_v10_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_dlmb_v10_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'PMOD_IPs_ilmb_bram_if_cntlr_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_ilmb_bram_if_cntlr_1_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'PMOD_IPs_ilmb_bram_if_cntlr_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:640]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_ilmb_bram_if_cntlr_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_ilmb_bram_if_cntlr_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'PMOD_IPs_ilmb_v10_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_ilmb_v10_1_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'PMOD_IPs_ilmb_v10_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:694]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_ilmb_v10_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_ilmb_v10_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'PMOD_IPs_lmb_bram_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_lmb_bram_1_stub.vhdl:6' bound to instance 'lmb_bram' of component 'PMOD_IPs_lmb_bram_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:722]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_lmb_bram_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_lmb_bram_1_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_T4VTR3' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:344]
+INFO: [Synth 8-3491] module 'PMOD_IPs_microblaze_0_xlconcat_0' declared at 'c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_xlconcat_0/synth/PMOD_IPs_microblaze_0_xlconcat_0.v:53' bound to instance 'microblaze_0_xlconcat' of component 'PMOD_IPs_microblaze_0_xlconcat_0' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:2193]
+INFO: [Synth 8-6157] synthesizing module 'PMOD_IPs_microblaze_0_xlconcat_0' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_xlconcat_0/synth/PMOD_IPs_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'PMOD_IPs_microblaze_0_xlconcat_0' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_xlconcat_0/synth/PMOD_IPs_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-3491] module 'PMOD_IPs_rst_clk_wiz_1_100M_1' declared at 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_rst_clk_wiz_1_100M_1_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'PMOD_IPs_rst_clk_wiz_1_100M_1' [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:2199]
+INFO: [Synth 8-638] synthesizing module 'PMOD_IPs_rst_clk_wiz_1_100M_1' [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/.Xil/Vivado-15616-DESKTOP-4ADHA59/realtime/PMOD_IPs_rst_clk_wiz_1_100M_1_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'PMOD_IPs' (0#1) [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/synth/PMOD_IPs.vhd:1597]
+INFO: [Synth 8-256] done synthesizing module 'PMOD_IPs_wrapper' (0#1) [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/hdl/PMOD_IPs_wrapper.vhd:24]
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:01:00 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:01:00 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:01:00 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1472.797 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_2/PMOD_IPs_microblaze_0_2/PMOD_IPs_microblaze_0_2_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_2/PMOD_IPs_microblaze_0_2/PMOD_IPs_microblaze_0_2_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_dlmb_v10_1/PMOD_IPs_dlmb_v10_1/PMOD_IPs_dlmb_v10_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_dlmb_v10_1/PMOD_IPs_dlmb_v10_1/PMOD_IPs_dlmb_v10_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_ilmb_v10_1/PMOD_IPs_ilmb_v10_1/PMOD_IPs_dlmb_v10_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_ilmb_v10_1/PMOD_IPs_ilmb_v10_1/PMOD_IPs_dlmb_v10_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_dlmb_bram_if_cntlr_1/PMOD_IPs_dlmb_bram_if_cntlr_1/PMOD_IPs_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_dlmb_bram_if_cntlr_1/PMOD_IPs_dlmb_bram_if_cntlr_1/PMOD_IPs_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_ilmb_bram_if_cntlr_1/PMOD_IPs_ilmb_bram_if_cntlr_1/PMOD_IPs_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_ilmb_bram_if_cntlr_1/PMOD_IPs_ilmb_bram_if_cntlr_1/PMOD_IPs_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_lmb_bram_1/PMOD_IPs_lmb_bram_1/PMOD_IPs_lmb_bram_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_lmb_bram_1/PMOD_IPs_lmb_bram_1/PMOD_IPs_lmb_bram_1_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_xbar_0/PMOD_IPs_xbar_0/PMOD_IPs_xbar_0_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_xbar_0/PMOD_IPs_xbar_0/PMOD_IPs_xbar_0_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_axi_intc_0/PMOD_IPs_microblaze_0_axi_intc_0/PMOD_IPs_microblaze_0_axi_intc_0_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_microblaze_0_axi_intc_0/PMOD_IPs_microblaze_0_axi_intc_0/PMOD_IPs_microblaze_0_axi_intc_0_in_context.xdc] for cell 'PMOD_IPs_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_mdm_1_1/PMOD_IPs_mdm_1_1/PMOD_IPs_mdm_1_1_in_context.xdc] for cell 'PMOD_IPs_i/mdm_1'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_mdm_1_1/PMOD_IPs_mdm_1_1/PMOD_IPs_mdm_1_1_in_context.xdc] for cell 'PMOD_IPs_i/mdm_1'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1_in_context.xdc] for cell 'PMOD_IPs_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1_in_context.xdc] for cell 'PMOD_IPs_i/clk_wiz_1'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_rst_clk_wiz_1_100M_1/PMOD_IPs_rst_clk_wiz_1_100M_1/PMOD_IPs_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'PMOD_IPs_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_rst_clk_wiz_1_100M_1/PMOD_IPs_rst_clk_wiz_1_100M_1/PMOD_IPs_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'PMOD_IPs_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_axi_gpio_0_3/PMOD_IPs_axi_gpio_0_3/PMOD_IPs_axi_gpio_0_3_in_context.xdc] for cell 'PMOD_IPs_i/axi_gpio_Button'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_axi_gpio_0_3/PMOD_IPs_axi_gpio_0_3/PMOD_IPs_axi_gpio_0_3_in_context.xdc] for cell 'PMOD_IPs_i/axi_gpio_Button'
+Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_axi_gpio_1_2/PMOD_IPs_axi_gpio_1_2/PMOD_IPs_axi_gpio_1_2_in_context.xdc] for cell 'PMOD_IPs_i/axi_gpio_LEd'
+Finished Parsing XDC File [c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_axi_gpio_1_2/PMOD_IPs_axi_gpio_1_2/PMOD_IPs_axi_gpio_1_2_in_context.xdc] for cell 'PMOD_IPs_i/axi_gpio_LEd'
+Parsing XDC File [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[0]'. [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[1]'. [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[2]'. [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[3]'. [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[4]'. [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc:7]
+Finished Parsing XDC File [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Kashif/Downloads/Nexys-A7-100T-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PMOD_IPs_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1472.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1472.797 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'PMOD_IPs_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:02:09 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:02:09 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  {c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  {c:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.gen/sources_1/bd/PMOD_IPs/ip/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1/PMOD_IPs_clk_wiz_1_1_in_context.xdc}, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/axi_gpio_Button. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PMOD_IPs_i/axi_gpio_LEd. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:02:09 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:02:10 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:02:24 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:03:09 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:03:09 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:03:10 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |PMOD_IPs_xbar_0                  |         1|
+|2     |PMOD_IPs_axi_gpio_0_3            |         1|
+|3     |PMOD_IPs_axi_gpio_1_2            |         1|
+|4     |PMOD_IPs_clk_wiz_1_1             |         1|
+|5     |PMOD_IPs_mdm_1_1                 |         1|
+|6     |PMOD_IPs_microblaze_0_2          |         1|
+|7     |PMOD_IPs_microblaze_0_axi_intc_0 |         1|
+|8     |PMOD_IPs_rst_clk_wiz_1_100M_1    |         1|
+|9     |PMOD_IPs_dlmb_bram_if_cntlr_1    |         1|
+|10    |PMOD_IPs_dlmb_v10_1              |         1|
+|11    |PMOD_IPs_ilmb_bram_if_cntlr_1    |         1|
+|12    |PMOD_IPs_ilmb_v10_1              |         1|
+|13    |PMOD_IPs_lmb_bram_1              |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |PMOD_IPs_axi_gpio_0_3_bbox            |     1|
+|2     |PMOD_IPs_axi_gpio_1_2_bbox            |     1|
+|3     |PMOD_IPs_clk_wiz_1_1_bbox             |     1|
+|4     |PMOD_IPs_dlmb_bram_if_cntlr_1_bbox    |     1|
+|5     |PMOD_IPs_dlmb_v10_1_bbox              |     1|
+|6     |PMOD_IPs_ilmb_bram_if_cntlr_1_bbox    |     1|
+|7     |PMOD_IPs_ilmb_v10_1_bbox              |     1|
+|8     |PMOD_IPs_lmb_bram_1_bbox              |     1|
+|9     |PMOD_IPs_mdm_1_1_bbox                 |     1|
+|10    |PMOD_IPs_microblaze_0_2_bbox          |     1|
+|11    |PMOD_IPs_microblaze_0_axi_intc_0_bbox |     1|
+|12    |PMOD_IPs_rst_clk_wiz_1_100M_1_bbox    |     1|
+|13    |PMOD_IPs_xbar_0_bbox                  |     1|
+|14    |IBUF                                  |     6|
+|15    |OBUF                                  |    16|
++------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:03:55 . Memory (MB): peak = 1472.797 ; gain = 559.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:03:16 . Memory (MB): peak = 1472.797 ; gain = 559.223
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:03:56 . Memory (MB): peak = 1472.797 ; gain = 559.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1472.797 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1472.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 11f44d98
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:04:19 . Memory (MB): peak = 1472.797 ; gain = 969.797
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1472.797 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Kashif/Desktop/WS2024/EMP 2/LAB/PROJECT/Microblaze_and_other_IPs.runs/synth_1/PMOD_IPs_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PMOD_IPs_wrapper_utilization_synth.rpt -pb PMOD_IPs_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 23:54:56 2024...

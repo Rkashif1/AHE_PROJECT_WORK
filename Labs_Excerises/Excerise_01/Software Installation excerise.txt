@@ -1,0 +1,5 @@
+Vivado and vitis has been succcessfully installed
+Teststing of these peripherals is Done
+ LED
+ Buttons
+ 7-Segment

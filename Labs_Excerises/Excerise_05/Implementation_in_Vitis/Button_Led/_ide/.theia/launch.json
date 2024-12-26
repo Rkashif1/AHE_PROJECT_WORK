@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "tcf-debug",
+      "request": "launch",
+      "name": "xgpio_example_app_hw_1",
+      "debugType": "baremetal-fpga",
+      "attachToRunningTargetOptions": {
+        "targetSetupMode": "standalone",
+        "executeScript": true,
+        "scriptPath": ""
+      },
+      "autoAttachProcessChildren": false,
+      "target": {
+        "targetConnectionId": "Local",
+        "peersIniPath": "../../../.peers.ini",
+        "context": "fpga"
+      },
+      "targetSetup": {
+        "resetSystem": true,
+        "programDevice": true,
+        "bitstreamFile": "${workspaceFolder}\\xgpio_example\\_ide\\bitstream\\PMOD_IPs_wrapper.bit",
+        "downloadElf": [
+          {
+            "core": "microblaze_0",
+            "resetProcessor": true,
+            "elfFile": "${workspaceFolder}\\xgpio_example\\build\\xgpio_example.elf",
+            "stopAtEntry": false
+          }
+        ]
+      },
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}
