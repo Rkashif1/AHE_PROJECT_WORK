@@ -1,0 +1,502 @@
+
+*** Running vivado
+    with args -log Hardware_final_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hardware_final_wrapper.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Hardware_final_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1399.602 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado-library-hierarchies/vivado-library-hierarchies'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.cache/ip 
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1399.602 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.srcs/utils_1/imports/synth_1/Hardware_final_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.srcs/utils_1/imports/synth_1/Hardware_final_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Hardware_final_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13572
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1399.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_wrapper' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:41]
+INFO: [Synth 8-3491] module 'Hardware_final' declared at 'c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:2864' bound to instance 'Hardware_final_i' of component 'Hardware_final' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:2931]
+INFO: [Synth 8-3491] module 'Hardware_final_PmodACL_0_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_PmodACL_0_0_stub.vhdl:5' bound to instance 'PmodACL_0' of component 'Hardware_final_PmodACL_0_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3614]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_PmodACL_0_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_PmodACL_0_0_stub.vhdl:72]
+INFO: [Synth 8-3491] module 'Hardware_final_PmodBLE_0_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_PmodBLE_0_0_stub.vhdl:5' bound to instance 'PmodBLE_0' of component 'Hardware_final_PmodBLE_0_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3678]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_PmodBLE_0_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_PmodBLE_0_0_stub.vhdl:72]
+INFO: [Synth 8-3491] module 'Hardware_final_axi_iic_0_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_Temprature' of component 'Hardware_final_axi_iic_0_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3742]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_axi_iic_0_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'Hardware_final_axi_uartlite_0_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'Hardware_final_axi_uartlite_0_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3772]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_axi_uartlite_0_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'Hardware_final_clk_wiz_1_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'Hardware_final_clk_wiz_1_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3797]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_clk_wiz_1_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Hardware_final_mdm_1_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'Hardware_final_mdm_1_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3805]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_mdm_1_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Hardware_final_microblaze_0_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'Hardware_final_microblaze_0_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3818]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_microblaze_0_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'Hardware_final_microblaze_0_axi_intc_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'Hardware_final_microblaze_0_axi_intc_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:3904]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_microblaze_0_axi_intc_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_microblaze_0_axi_periph_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1916]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_BZSH80' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_BZSH80' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1B7AS5Z' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1B7AS5Z' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1V5BZGF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1V5BZGF' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_VY5994' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:360]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_VY5994' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_IDMLIN' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:461]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_IDMLIN' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1I4SW94' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:562]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1I4SW94' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:562]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_170IXR4' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_170IXR4' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:663]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1TDLBGL' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1691]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1TDLBGL' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1691]
+INFO: [Synth 8-3491] module 'Hardware_final_xbar_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Hardware_final_xbar_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:2714]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_xbar_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'Hardware_final_microblaze_0_axi_periph_0' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1916]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_AWQX4W' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:747]
+INFO: [Synth 8-3491] module 'Hardware_final_dlmb_bram_if_cntlr_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'Hardware_final_dlmb_bram_if_cntlr_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1059]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_dlmb_bram_if_cntlr_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Hardware_final_dlmb_bram_if_cntlr_1' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr1' of component 'Hardware_final_dlmb_bram_if_cntlr_1' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1113]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_dlmb_bram_if_cntlr_1' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Hardware_final_dlmb_v10_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'Hardware_final_dlmb_v10_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1167]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_dlmb_v10_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'Hardware_final_ilmb_bram_if_cntlr_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'Hardware_final_ilmb_bram_if_cntlr_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1200]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_ilmb_bram_if_cntlr_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Hardware_final_ilmb_bram_if_cntlr_1' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr1' of component 'Hardware_final_ilmb_bram_if_cntlr_1' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1254]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_ilmb_bram_if_cntlr_1' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Hardware_final_ilmb_v10_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'Hardware_final_ilmb_v10_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1308]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_ilmb_v10_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'Hardware_final_lmb_bram_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'Hardware_final_lmb_bram_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_lmb_bram_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'Hardware_final_lmb_bram_1' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram1' of component 'Hardware_final_lmb_bram_1' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:1490]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_lmb_bram_1' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_AWQX4W' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:747]
+INFO: [Synth 8-3491] module 'Hardware_final_microblaze_0_xlconcat_0' declared at 'c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_xlconcat_0/synth/Hardware_final_microblaze_0_xlconcat_0.v:53' bound to instance 'microblaze_0_xlconcat' of component 'Hardware_final_microblaze_0_xlconcat_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:4116]
+INFO: [Synth 8-6157] synthesizing module 'Hardware_final_microblaze_0_xlconcat_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_xlconcat_0/synth/Hardware_final_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Hardware_final_microblaze_0_xlconcat_0' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_xlconcat_0/synth/Hardware_final_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-3491] module 'Hardware_final_rst_clk_wiz_1_100M_0' declared at 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'Hardware_final_rst_clk_wiz_1_100M_0' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:4122]
+INFO: [Synth 8-638] synthesizing module 'Hardware_final_rst_clk_wiz_1_100M_0' [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/.Xil/Vivado-23764-HSHL2NBIBL050/realtime/Hardware_final_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'Hardware_final' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/synth/Hardware_final.vhd:2931]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin10_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:228]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin1_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:235]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin2_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin3_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:249]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin4_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:256]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin7_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:263]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin8_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:270]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'ja_pin9_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:277]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin10_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:284]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin1_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:291]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin2_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:298]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin3_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:305]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin4_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:312]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin7_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:319]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin8_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:326]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'jc_pin9_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:333]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'temp_sensor_scl_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:340]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59734' bound to instance 'temp_sensor_sda_iobuf' of component 'IOBUF' [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:347]
+INFO: [Synth 8-256] done synthesizing module 'Hardware_final_wrapper' (0#1) [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/hdl/Hardware_final_wrapper.vhd:41]
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1432.809 ; gain = 33.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1432.809 ; gain = 33.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1432.809 ; gain = 33.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1432.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_0/Hardware_final_microblaze_0_0/Hardware_final_microblaze_0_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_0/Hardware_final_microblaze_0_0/Hardware_final_microblaze_0_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_dlmb_v10_0/Hardware_final_dlmb_v10_0/Hardware_final_ilmb_v10_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_dlmb_v10_0/Hardware_final_dlmb_v10_0/Hardware_final_ilmb_v10_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_ilmb_v10_0/Hardware_final_ilmb_v10_0/Hardware_final_ilmb_v10_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_ilmb_v10_0/Hardware_final_ilmb_v10_0/Hardware_final_ilmb_v10_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_dlmb_bram_if_cntlr_0/Hardware_final_dlmb_bram_if_cntlr_0/Hardware_final_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_dlmb_bram_if_cntlr_0/Hardware_final_dlmb_bram_if_cntlr_0/Hardware_final_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_ilmb_bram_if_cntlr_0/Hardware_final_ilmb_bram_if_cntlr_0/Hardware_final_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_ilmb_bram_if_cntlr_0/Hardware_final_ilmb_bram_if_cntlr_0/Hardware_final_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_lmb_bram_0/Hardware_final_lmb_bram_0/Hardware_final_lmb_bram_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_lmb_bram_0/Hardware_final_lmb_bram_0/Hardware_final_lmb_bram_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_dlmb_bram_if_cntlr_1/Hardware_final_dlmb_bram_if_cntlr_1/Hardware_final_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/dlmb_bram_if_cntlr1'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_dlmb_bram_if_cntlr_1/Hardware_final_dlmb_bram_if_cntlr_1/Hardware_final_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/dlmb_bram_if_cntlr1'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_ilmb_bram_if_cntlr_1/Hardware_final_ilmb_bram_if_cntlr_1/Hardware_final_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/ilmb_bram_if_cntlr1'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_ilmb_bram_if_cntlr_1/Hardware_final_ilmb_bram_if_cntlr_1/Hardware_final_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/ilmb_bram_if_cntlr1'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_lmb_bram_1/Hardware_final_lmb_bram_1/Hardware_final_lmb_bram_1_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/lmb_bram1'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_lmb_bram_1/Hardware_final_lmb_bram_1/Hardware_final_lmb_bram_1_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_local_memory/lmb_bram1'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_xbar_0/Hardware_final_xbar_0/Hardware_final_xbar_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_xbar_0/Hardware_final_xbar_0/Hardware_final_xbar_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_axi_intc_0/Hardware_final_microblaze_0_axi_intc_0/Hardware_final_microblaze_0_axi_intc_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_microblaze_0_axi_intc_0/Hardware_final_microblaze_0_axi_intc_0/Hardware_final_microblaze_0_axi_intc_0_in_context.xdc] for cell 'Hardware_final_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_mdm_1_0/Hardware_final_mdm_1_0/Hardware_final_mdm_1_0_in_context.xdc] for cell 'Hardware_final_i/mdm_1'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_mdm_1_0/Hardware_final_mdm_1_0/Hardware_final_mdm_1_0_in_context.xdc] for cell 'Hardware_final_i/mdm_1'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0_in_context.xdc] for cell 'Hardware_final_i/clk_wiz_1'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0_in_context.xdc] for cell 'Hardware_final_i/clk_wiz_1'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_rst_clk_wiz_1_100M_0/Hardware_final_rst_clk_wiz_1_100M_0/Hardware_final_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Hardware_final_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_rst_clk_wiz_1_100M_0/Hardware_final_rst_clk_wiz_1_100M_0/Hardware_final_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Hardware_final_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_axi_uartlite_0_0/Hardware_final_axi_uartlite_0_0/Hardware_final_axi_uartlite_0_0_in_context.xdc] for cell 'Hardware_final_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_axi_uartlite_0_0/Hardware_final_axi_uartlite_0_0/Hardware_final_axi_uartlite_0_0_in_context.xdc] for cell 'Hardware_final_i/axi_uartlite_0'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodACL_0_0/Hardware_final_PmodACL_0_0/Hardware_final_PmodACL_0_0_in_context.xdc] for cell 'Hardware_final_i/PmodACL_0'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodACL_0_0/Hardware_final_PmodACL_0_0/Hardware_final_PmodACL_0_0_in_context.xdc] for cell 'Hardware_final_i/PmodACL_0'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/Hardware_final_PmodBLE_0_0/Hardware_final_PmodBLE_0_0_in_context.xdc] for cell 'Hardware_final_i/PmodBLE_0'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/Hardware_final_PmodBLE_0_0/Hardware_final_PmodBLE_0_0_in_context.xdc] for cell 'Hardware_final_i/PmodBLE_0'
+Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_axi_iic_0_0/Hardware_final_axi_iic_0_0/Hardware_final_axi_iic_0_0_in_context.xdc] for cell 'Hardware_final_i/axi_iic_Temprature'
+Finished Parsing XDC File [c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_axi_iic_0_0/Hardware_final_axi_iic_0_0/Hardware_final_axi_iic_0_0_in_context.xdc] for cell 'Hardware_final_i/axi_iic_Temprature'
+Parsing XDC File [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1468.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 18 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1468.980 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Hardware_final_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Hardware_final_i/microblaze_0_local_memory/lmb_bram1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.gen/sources_1/bd/Hardware_final/ip/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0/Hardware_final_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/dlmb_bram_if_cntlr1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/ilmb_bram_if_cntlr1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_local_memory/lmb_bram1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/PmodACL_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/PmodBLE_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Hardware_final_i/axi_iic_Temprature. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |Hardware_final_xbar_0                  |         1|
+|2     |Hardware_final_PmodACL_0_0             |         1|
+|3     |Hardware_final_PmodBLE_0_0             |         1|
+|4     |Hardware_final_axi_iic_0_0             |         1|
+|5     |Hardware_final_axi_uartlite_0_0        |         1|
+|6     |Hardware_final_clk_wiz_1_0             |         1|
+|7     |Hardware_final_mdm_1_0                 |         1|
+|8     |Hardware_final_microblaze_0_0          |         1|
+|9     |Hardware_final_microblaze_0_axi_intc_0 |         1|
+|10    |Hardware_final_rst_clk_wiz_1_100M_0    |         1|
+|11    |Hardware_final_dlmb_bram_if_cntlr_0    |         1|
+|12    |Hardware_final_dlmb_bram_if_cntlr_1    |         1|
+|13    |Hardware_final_dlmb_v10_0              |         1|
+|14    |Hardware_final_ilmb_bram_if_cntlr_0    |         1|
+|15    |Hardware_final_ilmb_bram_if_cntlr_1    |         1|
+|16    |Hardware_final_ilmb_v10_0              |         1|
+|17    |Hardware_final_lmb_bram_0              |         1|
+|18    |Hardware_final_lmb_bram_1              |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------------+------+
+|      |Cell                                        |Count |
++------+--------------------------------------------+------+
+|1     |Hardware_final_PmodACL_0_0_bbox             |     1|
+|2     |Hardware_final_PmodBLE_0_0_bbox             |     1|
+|3     |Hardware_final_axi_iic_0_0_bbox             |     1|
+|4     |Hardware_final_axi_uartlite_0_0_bbox        |     1|
+|5     |Hardware_final_clk_wiz_1_0_bbox             |     1|
+|6     |Hardware_final_dlmb_bram_if_cntlr_0_bbox    |     1|
+|7     |Hardware_final_dlmb_bram_if_cntlr_1_bbox    |     1|
+|8     |Hardware_final_dlmb_v10_0_bbox              |     1|
+|9     |Hardware_final_ilmb_bram_if_cntlr_0_bbox    |     1|
+|10    |Hardware_final_ilmb_bram_if_cntlr_1_bbox    |     1|
+|11    |Hardware_final_ilmb_v10_0_bbox              |     1|
+|12    |Hardware_final_lmb_bram_0_bbox              |     1|
+|13    |Hardware_final_lmb_bram_1_bbox              |     1|
+|14    |Hardware_final_mdm_1_0_bbox                 |     1|
+|15    |Hardware_final_microblaze_0_0_bbox          |     1|
+|16    |Hardware_final_microblaze_0_axi_intc_0_bbox |     1|
+|17    |Hardware_final_rst_clk_wiz_1_100M_0_bbox    |     1|
+|18    |Hardware_final_xbar_0_bbox                  |     1|
+|19    |IBUF                                        |     2|
+|20    |IOBUF                                       |    18|
+|21    |OBUF                                        |     1|
++------+--------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:01 . Memory (MB): peak = 1475.977 ; gain = 33.207
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1475.977 ; gain = 76.375
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1475.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1475.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 18 instances
+
+Synth Design complete, checksum: 91dbf62a
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:26 . Memory (MB): peak = 1475.977 ; gain = 76.375
+INFO: [Common 17-1381] The checkpoint 'C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/synth_1/Hardware_final_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Hardware_final_wrapper_utilization_synth.rpt -pb Hardware_final_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 22:18:29 2024...

@@ -1,0 +1,486 @@
+22:38:43 **** Build of configuration Debug for project HealthMonitorDevice ****
+make all 
+'Building file: ../src/BLE_files/PmodBLE.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/PmodBLE.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/PmodBLE.d" -MT"src/BLE_files/PmodBLE.o" -o "src/BLE_files/PmodBLE.o" "../src/BLE_files/PmodBLE.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/PmodBLE.h:26,
+                 from ../src/BLE_files/PmodBLE.c:21:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/PmodBLE.c'
+' '
+'Building file: ../src/BLE_files/xuartns550.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550.d" -MT"src/BLE_files/xuartns550.o" -o "src/BLE_files/xuartns550.o" "../src/BLE_files/xuartns550.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/xuartns550.c:74:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550.c'
+' '
+'Building file: ../src/BLE_files/xuartns550_format.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550_format.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550_format.d" -MT"src/BLE_files/xuartns550_format.o" -o "src/BLE_files/xuartns550_format.o" "../src/BLE_files/xuartns550_format.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/xuartns550_format.c:57:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550_format.c'
+' '
+'Building file: ../src/BLE_files/xuartns550_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550_intr.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550_intr.d" -MT"src/BLE_files/xuartns550_intr.o" -o "src/BLE_files/xuartns550_intr.o" "../src/BLE_files/xuartns550_intr.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/xuartns550_intr.c:64:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550_intr.c'
+' '
+'Building file: ../src/BLE_files/xuartns550_l.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550_l.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550_l.d" -MT"src/BLE_files/xuartns550_l.o" -o "src/BLE_files/xuartns550_l.o" "../src/BLE_files/xuartns550_l.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550_l.c:62:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550_l.c'
+' '
+'Building file: ../src/BLE_files/xuartns550_options.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550_options.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550_options.d" -MT"src/BLE_files/xuartns550_options.o" -o "src/BLE_files/xuartns550_options.o" "../src/BLE_files/xuartns550_options.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/xuartns550_options.c:58:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550_options.c'
+' '
+'Building file: ../src/BLE_files/xuartns550_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550_selftest.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550_selftest.d" -MT"src/BLE_files/xuartns550_selftest.o" -o "src/BLE_files/xuartns550_selftest.o" "../src/BLE_files/xuartns550_selftest.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/xuartns550_selftest.c:58:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550_selftest.c'
+' '
+'Building file: ../src/BLE_files/xuartns550_stats.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BLE_files/xuartns550_stats.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/BLE_files/xuartns550_stats.d" -MT"src/BLE_files/xuartns550_stats.o" -o "src/BLE_files/xuartns550_stats.o" "../src/BLE_files/xuartns550_stats.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/BLE_files/xuartns550_l.h:69,
+                 from ../src/BLE_files/xuartns550.h:189,
+                 from ../src/BLE_files/xuartns550_stats.c:53:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/BLE_files/xuartns550_stats.c'
+' '
+'Building file: ../src/ACL_files/PmodACL.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ACL_files/PmodACL.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ACL_files/PmodACL.d" -MT"src/ACL_files/PmodACL.o" -o "src/ACL_files/PmodACL.o" "../src/ACL_files/PmodACL.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/ACL_files/xspi_l.h:72,
+                 from ../src/ACL_files/xspi.h:314,
+                 from ../src/ACL_files/PmodACL.h:31,
+                 from ../src/ACL_files/PmodACL.c:26:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/ACL_files/PmodACL.c'
+' '
+'Building file: ../src/ACL_files/xspi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ACL_files/xspi.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ACL_files/xspi.d" -MT"src/ACL_files/xspi.o" -o "src/ACL_files/xspi.o" "../src/ACL_files/xspi.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/ACL_files/xspi_l.h:72,
+                 from ../src/ACL_files/xspi.h:314,
+                 from ../src/ACL_files/xspi.c:105:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/ACL_files/xspi.c'
+' '
+'Building file: ../src/ACL_files/xspi_options.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ACL_files/xspi_options.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ACL_files/xspi_options.d" -MT"src/ACL_files/xspi_options.o" -o "src/ACL_files/xspi_options.o" "../src/ACL_files/xspi_options.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/ACL_files/xspi_l.h:72,
+                 from ../src/ACL_files/xspi.h:314,
+                 from ../src/ACL_files/xspi_options.c:54:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/ACL_files/xspi_options.c'
+' '
+'Building file: ../src/ACL_files/xspi_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ACL_files/xspi_selftest.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ACL_files/xspi_selftest.d" -MT"src/ACL_files/xspi_selftest.o" -o "src/ACL_files/xspi_selftest.o" "../src/ACL_files/xspi_selftest.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/ACL_files/xspi_l.h:72,
+                 from ../src/ACL_files/xspi.h:314,
+                 from ../src/ACL_files/xspi_selftest.c:61:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/ACL_files/xspi_selftest.c'
+' '
+'Building file: ../src/ACL_files/xspi_stats.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ACL_files/xspi_stats.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ACL_files/xspi_stats.d" -MT"src/ACL_files/xspi_stats.o" -o "src/ACL_files/xspi_stats.o" "../src/ACL_files/xspi_stats.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_io.h:49,
+                 from ../src/ACL_files/xspi_l.h:72,
+                 from ../src/ACL_files/xspi.h:314,
+                 from ../src/ACL_files/xspi_stats.c:56:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/ACL_files/xspi_stats.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from ../src/main.c:35:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+'Finished building: ../src/main.c'
+' '
+'Building target: HealthMonitorDevice.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "HealthMonitorDevice.elf"  ./src/BLE_files/PmodBLE.o ./src/BLE_files/xuartns550.o ./src/BLE_files/xuartns550_format.o ./src/BLE_files/xuartns550_intr.o ./src/BLE_files/xuartns550_l.o ./src/BLE_files/xuartns550_options.o ./src/BLE_files/xuartns550_selftest.o ./src/BLE_files/xuartns550_stats.o  ./src/ACL_files/PmodACL.o ./src/ACL_files/xspi.o ./src/ACL_files/xspi_options.o ./src/ACL_files/xspi_selftest.o ./src/ACL_files/xspi_stats.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2022.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: HealthMonitorDevice.elf section `.bss' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/vitis/2022.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/11.2.0/real-ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 3080 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:40: HealthMonitorDevice.elf] Error 1
+
+22:38:51 Build Finished (took 7s.765ms)
+

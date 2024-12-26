@@ -1,0 +1,8 @@
+#ifndef HEALTHMONITOR_H
+#define HEALTHMONITOR_H
+
+
+float GetTempValue();
+
+
+#endif // HEALTHMONITOR_H

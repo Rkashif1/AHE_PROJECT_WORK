@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Dec 19 22:12:48 2024
+# Process ID: 14588
+# Current directory: C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/Hardware_final_dlmb_bram_if_cntlr_1_synth_1
+# Command line: vivado.exe -log Hardware_final_dlmb_bram_if_cntlr_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hardware_final_dlmb_bram_if_cntlr_1.tcl
+# Log file: C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/Hardware_final_dlmb_bram_if_cntlr_1_synth_1/Hardware_final_dlmb_bram_if_cntlr_1.vds
+# Journal file: C:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.runs/Hardware_final_dlmb_bram_if_cntlr_1_synth_1\vivado.jou
+# Running On: HSHL2NBIBL050, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16893 MB
+#-----------------------------------------------------------
+source Hardware_final_dlmb_bram_if_cntlr_1.tcl -notrace

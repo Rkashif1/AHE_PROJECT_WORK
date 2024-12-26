@@ -1,0 +1,472 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xiic.h" //for temprature
+
+#include "PmodACL.h"  //for ACL
+#include "xil_cache.h" //for ACL
+
+#include "xparameters.h"  //Connecting the hardware to software
+#include "sleep.h"   //to use delay functions
+#include "math.h" //to use the sqrt function
+#include "PmodBLE.h" //for BLE
+
+#include "HealthMonitor.h"
+
+
+//For Temperature
+#define IIC_DEVICE_ID XPAR_AXI_IIC_TEMPRATURE_BASEADDR //for readability and small name for easier coding
+#define Temp_address 0x4B //Temp address is 0x4B from datasheets (built in). it has 4 addresses
+
+//For BLE
+#include "xuartlite.h"
+typedef XUartLite SysUart;
+#define SysUart_Send            XUartLite_Send
+#define SysUart_Recv            XUartLite_Recv
+#define SYS_UART_DEVICE_ID      XPAR_AXI_UARTLITE_0_DEVICE_ID
+#define BLE_UART_AXI_CLOCK_FREQ XPAR_CPU_M_AXI_DP_FREQ_HZ
+
+
+#define NLine 1
+#define xLine 0
+
+
+PmodACL acl; //Making our instance to control our ACL pmod
+PmodBLE myDevice; //Instance for BLE
+SysUart myUart; //Instance for UART (serial terminal)
+
+
+float Force;
+float temperature;
+u8 cntrlDisplay=0;
+u8 connectflag=0;
+
+char *patient="Kashif"; //Name need to be sent in order to receive data about him
+//length of it is 6 (hard coded). Can be done in coding but to prove idea, we do it hard coded way.
+float x, y, z;
+
+
+
+int main()
+{
+
+	HealthMonitorInit();
+
+    while(1){
+
+		BLEconnectedPrint();
+		if(reqPatData()){
+			printf("\033[32mPatient data was requested\033[0m\n");
+			sendPatData();
+			printf("\033[32mData was sent!\033[0m\n");
+			sleep(2);
+			emptyBLEbuf();
+		}
+		checkFall();
+		CheckTemp();
+  }
+
+    DisableCaches();
+    return 0;
+}
+
+
+void HealthMonitorInit(){
+	 EnableCaches();
+	 ACL_initialize();
+	 SysUartInit();
+	 BLE_Init();
+	 emptyBLEbuf();
+
+	  // Print in green
+	   printf("\033[32mHealth Monitor system is starting ...\n");
+	   sleep(3);
+	   printf("System is running :) \n");
+	   // Reset color to default
+	   printf("\033[0m");
+}
+
+void checkFall(){
+
+	ACL_ReadAccelG(&acl, &x, &y, &z);
+	GetForce(x,y,z);
+    if(Force>4){
+    	printf("\033[31mFall detected with Force of: \033[0m");
+    	 printf("%.4f\n", Force);
+    	 printf("X: %.4f   ",x);
+    	 printf("Y: %.4f   ",y);
+    	 printf("Z: %.4f\n",z);
+ 		sendStringBLE("Fall detected with Force of: ");
+ 		sendFloatBLE(Force,NLine);
+ 		sendStringBLE("Fall X - Y - Z \r\n");
+ 		ACL_XYZ_Print(0);
+ 		sendStringBLE("Waiting for 5 seconds to check orientation \r\n");
+ 		sleep(5);
+ 		ACL_XYZ_Print(3);
+ 		if(z<0.8){
+ 			printf("\033[31mThe patient has fell !!! GO HELP\033[0m \r\n");
+ 			sendStringBLE("The patient has fell !!! GO HELP\r\n");
+ 			sendStringBLE("The patient has fell !!! GO HELP\r\n");
+ 			sendStringBLE("The patient has fell !!! GO HELP\r\n");
+ 			sendStringBLE("The patient has fell !!! GO HELP\r\n");
+ 		}else{
+ 			sendStringBLE("Wrong Detection Probably\r\n");
+ 			sendStringBLE("Good to go check though \r\n");
+ 		}
+    }
+
+
+    //printf("Force: %.4f\n", Force);
+	usleep(10000);
+
+}
+
+
+u8 ACL_XYZ_Print(u8 nData){
+
+	for(int i=0;i<nData;i++){
+		ACL_ReadAccelG(&acl, &x, &y, &z);
+		sendStringBLE("X: ");
+ 		sendFloatBLE(x,xLine);
+ 		sendStringBLE("   ");
+ 		sendStringBLE("Y: ");
+ 		sendFloatBLE(y,xLine);
+ 		sendStringBLE("   ");
+ 		sendStringBLE("Z: ");
+ 		sendFloatBLE(z,NLine);
+ 		if(nData-1==i){
+ 			return 0;
+ 		}
+
+	}
+			sendStringBLE("X: ");
+	 		sendFloatBLE(x,xLine);
+	 		sendStringBLE("   ");
+	 		sendStringBLE("Y: ");
+	 		sendFloatBLE(y,xLine);
+	 		sendStringBLE("   ");
+	 		sendStringBLE("Z: ");
+	 		sendFloatBLE(z,NLine);
+	 		return 0;
+
+}
+
+void CheckTemp(){
+	GetTempValue();
+	if(temperature<20){
+		printf("Kashif's Temperature dangerously \033[31mlow\033[0m");
+		printf(": %.4f °C\n", temperature);
+		sendStringBLE("Kashif's Temperature is too low: ");
+		sendFloatBLE(temperature,NLine);
+	}else if(temperature>25){
+		printf("Kashif's Temperature dangerously \033[31mhigh\033[0m");
+		printf(": %.4f °C\n", temperature);
+		sendStringBLE("Kashif's Temperature is too high: ");
+		sendFloatBLE(temperature,NLine);
+	}else{
+	printf("Kashif's Temperature: %.4f °C\n", temperature);
+	}
+}
+
+
+
+//CntrDisp used to print the messagges only one time depending on the event
+
+void BLEconnectedPrint(){
+    if((BLE_IsConnected(&myDevice)==1)&&(cntrlDisplay==0)){
+     printf("\033[32mBLE is Connected to a device \033[0m\n");
+     sleep(2);
+   	 sendStringBLE("BLE is Connected now\r\n");
+   	 sendStringBLE("You are now Monitoring \r\n");
+   	 cntrlDisplay=1;
+   	 emptyBLEbuf();
+   	 sleep(2);
+    }else if((BLE_IsConnected(&myDevice)==0)&&(cntrlDisplay==1)){
+    	 printf("\033[31mBLE device is disconnected!!\033[0m\n");
+    	 cntrlDisplay=0;
+ 		emptyBLEbuf();
+    	 sleep(2);
+    }
+}
+
+
+//Function to send the patient data and the stauts
+void sendPatData(){
+
+
+	GetTempValue();
+	sendStringBLE("Kashif temperature: ");
+	sendFloatBLE(temperature,NLine);
+
+	ACL_ReadAccelG(&acl, &x, &y, &z);
+	if (z > 0.7 && (x >= -0.2 && x <= 0.2) && (y >= -0.2 && y <= 0.2)){
+		sendStringBLE("Kashif status: standing or sitting\r\n");
+		ACL_XYZ_Print(0);
+		//standing
+		//sitting
+	}else if(z>0.8&&(x < -0.4 || x > 0.4)){
+		//moving
+		sendStringBLE("Kashif status: moving (walking or running)\r\n");
+		ACL_XYZ_Print(0);
+
+	}else if((z>0.8&&(y < -0.4 || y > 0.4))){
+		//moving
+		sendStringBLE("Kashif status: moving (walking or running)\r\n");
+		ACL_XYZ_Print(0);
+
+	}else if(z<0.4&&(x < -0.7 || x > 0.7)){
+		//sleeping(laying on his back or chest)
+		sendStringBLE("Kashif status: sleeping \r\n");
+		sendStringBLE("(laying on his back or chest)\r\n");
+		ACL_XYZ_Print(0);
+
+	}else if(z<0.4&&(y < -0.7 || y > 0.7)){
+		//sleeping
+		sendStringBLE("Kashif status: sleeping (laying on his side) \r\n");
+		ACL_XYZ_Print(0);
+		}else{
+			//hard to predict. but for sure not sleeping. can be moving,standing or sitting
+			//here are the readings x y z
+			sendStringBLE("Kashif status hard to predict\r\n");
+			sendStringBLE("He could be moving,sitting or standing\r\n");
+			sendStringBLE("He is not sleeping or laying for sure!!! \r\n");
+			ACL_XYZ_Print(0);
+		}
+
+
+
+
+}
+
+
+//function used to send float tpye of data using the pmod BLE
+//Used in this case to send data like temperature and data from ACL
+
+void sendFloatBLE(float value,u8 newLine){
+
+
+	char temp_str[10];
+
+	if(newLine==NLine){
+	sprintf(temp_str, "%.4f\r\n", value);
+
+	}else{
+	sprintf(temp_str, "%.4f", value);
+
+	}
+
+	// Manually calculate the length of the string
+	    int len = 0;
+	    while (temp_str[len] != '\0') {
+	        len++;
+	    }
+	    BLE_SendData(&myDevice, temp_str, len);
+
+	    usleep(10000); //small delay to ensure no issues with multipule send operations
+}
+
+
+
+//function used to send text using the BLE pmod .
+//it splits the datastr into 16 bytes chunks because 16 bytes is max the uart can send in microblaze.
+//we solve it in software instead of hardware because it is simpler
+void sendStringBLE(char *dataStr) {
+    int len = 0;
+
+    // Calculate the length of the string
+    while (dataStr[len] != '\0') {
+        len++;
+    }
+
+    // Send in chunks of 16 bytes
+    for (int i = 0; i < len; i += 16) {
+        if (len - i > 16) {
+            // Send 16 bytes
+            BLE_SendData(&myDevice, &dataStr[i], 16);
+        } else {
+            // Send the remaining bytes (less than 16)
+            BLE_SendData(&myDevice, &dataStr[i], len - i);
+        }
+        usleep(10000);  // Small delay
+    }
+}
+
+
+
+//returns 1 if patient name is correct and 0 patient name doesn't match
+u8 reqPatData(){
+	u8 n;
+	u8 buf[1];
+	//u8 RN[2]; //used to take \r\n sent by the BLE on the phone to empty them and check if the name is not correct
+
+	//returns the number of bytes received. n=1 means something is sent
+	n=BLE_RecvData(&myDevice, buf, 1);
+
+
+	if(n!=0){
+			//6 is the number of char in Kashif name
+		for(int i=0;i<6;i++){
+
+				if((buf[0]!=patient[i])||(i<5&&n==0)){
+					emptyBLEbuf();
+					usleep(10000);
+					sendStringBLE("Patient name sent doesn't exist \r\n");
+					return 0;
+				}
+				n=BLE_RecvData(&myDevice, buf, 1);
+		}
+
+		n=BLE_RecvData(&myDevice, buf, 1);//remove the/n at the end . the /r is removed before leaving the for loop
+		n=BLE_RecvData(&myDevice, buf, 1);
+		if(n==1){
+			emptyBLEbuf();
+			usleep(10000);
+			sendStringBLE("Patient name sent doesn't exist \r\n");
+			return 0;
+		}
+		return 1;
+	}
+	return 0;
+}
+
+
+//empty BLE buffer because some data are sent once communication is started
+void emptyBLEbuf(){
+	u8 n;
+	u8 buf[1];
+	n=BLE_RecvData(&myDevice, buf, 1);
+	while(n!=0){
+		n=BLE_RecvData(&myDevice, buf, 1);
+	}
+}
+
+
+//This function is used with  ACL_ReadAccelG(&acl, &x, &y, &z); to get the Force (Magnitude of the acceleration)
+// It make use of sqrt function from math.h library. The Force is used to detect if a fall happened because
+//The magnitude of acceleration is defined to be the force something subjected to (unit G force)
+void GetForce(){
+	 Force=sqrt((x*x)+(y*y)+(z*z));
+}
+
+
+//Function initialize the ACL PMOD (taken from the ready example)
+void ACL_initialize() {
+
+   printf("ACL Initializing\n");
+   ACL_begin(&acl, XPAR_PMODACL_0_AXI_LITE_GPIO_BASEADDR,
+         XPAR_PMODACL_0_AXI_LITE_SPI_BASEADDR);
+   ACL_SetMeasure(&acl, 0);
+   ACL_SetGRange(&acl, ACL_PAR_GRANGE_PM4G);
+   ACL_SetMeasure(&acl, 1);
+   ACL_CalibrateOneAxisGravitational(&acl, ACL_PAR_AXIS_ZP);
+   sleep(1); // After calibration, some delay is required for the new settings
+             // to take effect.
+}
+
+
+void SysUartInit()
+{
+	printf("System UART Initializing \n");
+    XUartLite_Initialize(&myUart, SYS_UART_DEVICE_ID);
+}
+
+void BLE_Init(){
+
+	printf("BLE UART Initializing \n");
+	 BLE_Begin (
+	        &myDevice,
+	        XPAR_PMODBLE_0_S_AXI_GPIO_BASEADDR,
+	        XPAR_PMODBLE_0_S_AXI_UART_BASEADDR,
+	        BLE_UART_AXI_CLOCK_FREQ,
+	        115200
+	    );
+}
+
+
+
+//This function make use of XIIC_Recv function to read data from the built in temprature sensor on the Nexys A7 100t
+//using the i2c communction. Nothing Complex needed because the first two bytes have the Temp value data
+//On Power on, the sensor points to the first register (data register) and it increment automatically
+//Reading the datasheet, nothing extra needed for our system. 16 bit operation can be implemented but it is no use
+//for our system
+
+void GetTempValue(){
+	int16_t temp_raw=0;  //to save the 13 bits we want here
+	uint8_t temp_data[2]; // Buffer for two bytes. saving raw data to manipulate it
+
+	XIic_Recv(IIC_DEVICE_ID, Temp_address,temp_data, 2, XIIC_STOP);
+	  /*No need to do initialization or instances because this function is low level recieve function
+	    The data acquired is raw . Meaning, it needs to be manipulated to get actual temperature.
+	    From the datasheet: The sensor is in default mode - The register address by default point to the first temp
+	    value (0x00 address) and it increment automatically to next address(No need to manually change the address) -
+	    It works with 13 bit in default mode(one can go for 16 bit mode if desired) - How to change from raw data to
+	    celsium temperature is in the datasheet.
+	  */
+		temp_raw=0;
+	    temp_raw=temp_data[0];
+	    temp_raw = temp_raw << 5;
+	    temp_raw = temp_raw | (temp_data[1] >> 3);
+
+	    temperature = temp_raw * 0.0625f; // To store the final temperature in C°
+
+}
+
+
+
+
+
+
+
+void EnableCaches() {
+#ifdef __MICROBLAZE__
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+   Xil_ICacheEnable();
+#endif
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+   Xil_DCacheEnable();
+#endif
+#endif
+}
+
+void DisableCaches() {
+#ifdef __MICROBLAZE__
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+   Xil_DCacheDisable();
+#endif
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+   Xil_ICacheDisable();
+#endif
+#endif
+}

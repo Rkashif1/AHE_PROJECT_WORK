@@ -1,0 +1,26 @@
+#include "HealthMonitor.h"
+
+//This function uses the Recv function of XIIC to recive data from temprature sensor.
+//It manipulates the raw data to get the actual reading in °C unit . It follows the mathemtical equations in
+//The temprature sensor datasheet
+
+float GetTempValue(){
+	int16_t temp_raw=0;  //to save the 13 bits we want here
+	uint8_t temp_data[2]; // Buffer for two bytes. saving raw data to manipulate it
+
+	XIic_Recv(IIC_DEVICE_ID, Temp_address,temp_data, 2, XIIC_STOP);
+	  /*No need to do initialization or instances because this function is low level recieve function
+	    The data acquired is raw . Meaning, it needs to be manipulated to get actual temperature.
+	    From the datasheet: The sensor is in default mode - The register address by default point to the first temp
+	    value (0x00 address) and it increment automatically to next address(No need to manually change the address) -
+	    It works with 13 bit in default mode(one can go for 16 bit mode if desired) - How to change from raw data to
+	    celsium temperature is in the datasheet.
+	  */
+		temp_raw=0;
+	    temp_raw=temp_data[0];
+	    temp_raw = temp_raw << 5;
+	    temp_raw = temp_raw | (temp_data[1] >> 3);
+	    float temperature = temp_raw * 0.0625f; // To store the final temperature in C°
+
+	    return temperature;
+}

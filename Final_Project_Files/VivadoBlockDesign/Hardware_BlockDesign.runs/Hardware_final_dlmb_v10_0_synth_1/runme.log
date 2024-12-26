@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log Hardware_final_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hardware_final_dlmb_v10_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Hardware_final_dlmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1397.617 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado-library-hierarchies/vivado-library-hierarchies'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/HealthMonitorSystem/BlockDesign/Hardware_BlockDesign/Hardware_BlockDesign.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Hardware_final_dlmb_v10_0, cache-ID = 4a4357484449e165.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 22:13:24 2024...

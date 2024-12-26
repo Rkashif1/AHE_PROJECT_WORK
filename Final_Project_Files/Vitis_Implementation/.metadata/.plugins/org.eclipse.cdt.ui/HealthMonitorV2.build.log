@@ -1,0 +1,76 @@
+17:26:15 **** Incremental Build of configuration Debug for project HealthMonitorV2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xil_printf.h:16,
+                 from ../src/main.c:35:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:640: warning: "XPAR_DLMB_CNTLR_BASEADDR" redefined
+  640 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:602: note: this is the location of the previous definition
+  602 | #define XPAR_DLMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:641: warning: "XPAR_DLMB_CNTLR_HIGHADDR" redefined
+  641 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:603: note: this is the location of the previous definition
+  603 | #define XPAR_DLMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:659: warning: "XPAR_ILMB_CNTLR_BASEADDR" redefined
+  659 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00020000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:621: note: this is the location of the previous definition
+  621 | #define XPAR_ILMB_CNTLR_BASEADDR 0x00000000
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:660: warning: "XPAR_ILMB_CNTLR_HIGHADDR" redefined
+  660 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0003FFFF
+      | 
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/xparameters.h:622: note: this is the location of the previous definition
+  622 | #define XPAR_ILMB_CNTLR_HIGHADDR 0x0001FFFF
+      | 
+../src/main.c: In function 'sendFloatBLE':
+../src/main.c:304:37: warning: pointer targets in passing argument 2 of 'BLE_SendData' differ in signedness [-Wpointer-sign]
+  304 |             BLE_SendData(&myDevice, temp_str, len);
+      |                                     ^~~~~~~~
+      |                                     |
+      |                                     char *
+In file included from ../src/main.c:44:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/PmodBLE.h:39:44: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+   39 | int BLE_SendData(PmodBLE* InstancePtr, u8 *Data, int nData);
+      |                                        ~~~~^~~~
+../src/main.c: In function 'sendStringBLE':
+../src/main.c:326:37: warning: pointer targets in passing argument 2 of 'BLE_SendData' differ in signedness [-Wpointer-sign]
+  326 |             BLE_SendData(&myDevice, &dataStr[i], 16);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     char *
+In file included from ../src/main.c:44:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/PmodBLE.h:39:44: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+   39 | int BLE_SendData(PmodBLE* InstancePtr, u8 *Data, int nData);
+      |                                        ~~~~^~~~
+../src/main.c:329:37: warning: pointer targets in passing argument 2 of 'BLE_SendData' differ in signedness [-Wpointer-sign]
+  329 |             BLE_SendData(&myDevice, &dataStr[i], len - i);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     char *
+In file included from ../src/main.c:44:
+C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bspinclude/include/PmodBLE.h:39:44: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+   39 | int BLE_SendData(PmodBLE* InstancePtr, u8 *Data, int nData);
+      |                                        ~~~~^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HealthMonitorV2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/sw/HealthMonitor/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "HealthMonitorV2.elf"  ./src/BLE_Files/PmodBLE.o ./src/BLE_Files/xuartns550.o ./src/BLE_Files/xuartns550_format.o ./src/BLE_Files/xuartns550_intr.o ./src/BLE_Files/xuartns550_l.o ./src/BLE_Files/xuartns550_options.o ./src/BLE_Files/xuartns550_selftest.o ./src/BLE_Files/xuartns550_stats.o  ./src/ACL_Files/PmodACL.o ./src/ACL_Files/xspi.o ./src/ACL_Files/xspi_options.o ./src/ACL_Files/xspi_selftest.o ./src/ACL_Files/xspi_stats.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HealthMonitorV2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size HealthMonitorV2.elf  |tee "HealthMonitorV2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 134064	   1896	   3472	 139432	  220a8	HealthMonitorV2.elf
+'Finished building: HealthMonitorV2.elf.size'
+' '
+
+17:26:17 Build Finished (took 1s.544ms)
+

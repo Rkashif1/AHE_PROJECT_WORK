@@ -1,0 +1,8 @@
+#ifndef FUNCPROTO_H
+#define FUNCPROTO_H
+
+
+float GetTempValue();
+
+
+#endif // FUNCPROTO_H

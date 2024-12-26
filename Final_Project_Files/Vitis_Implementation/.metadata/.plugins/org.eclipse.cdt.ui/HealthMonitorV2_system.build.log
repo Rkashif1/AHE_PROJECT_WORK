@@ -1,0 +1,6 @@
+20:08:53 **** Build of configuration Debug for project HealthMonitorV2_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+20:08:53 Build Finished (took 258ms)
+

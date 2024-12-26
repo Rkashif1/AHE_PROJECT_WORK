@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="HealthMonitorDevice" location="C:/HealthMonitorSystem/VitisCode/HealthMonitorDevice" platform="C:/HealthMonitorSystem/VitisCode/HealthMonitor/export/HealthMonitor/HealthMonitor.xpfm" platformUID="xilinx:nexys-a7-100t::0.0(custom)" systemProject="HealthMonitorDevice_system" sysConfig="HealthMonitor" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="6ecb5a0b6285b0e74a6336ff43ddd2f8">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1558315082">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1176121863" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

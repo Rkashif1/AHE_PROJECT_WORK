@@ -1,0 +1,13 @@
+#ifndef HEALTHMONITOR_H
+#define HEALTHMONITOR_H
+
+
+void GetTempValue();
+void ACL_initialize();
+
+
+//functions needed by ACL PMOD and BLE PMOD
+void EnableCaches();
+void DisableCaches();
+
+#endif // HEALTHMONITOR_H

@@ -1,0 +1,34 @@
+Hardware Behaviour :
+
+Accelo: If magnitude gets above some value (falling value), we send a warning message through BLE to phone
+	and send next values of x y z (three values to see if the person is moving or not)
+	we check after some time (5 seconds) if the value indicating that the person is moving , then
+	the fall detection was wrong. If the values indicating no movement, it means the perosn is not moving
+	and on ground. (BLE CAN also be used for communction between the sick person and the nurse or idk)
+	
+	Three conditions to give the person status:
+	if z value is 1.3 and other values close to 0, the person is standing maybe
+	if z value is 1.3 and other values (x or y) are above 0.3 it means this person is moving in some 
+	direction
+	if the z value is close to 0 and one of the other values (x or y) is clos to 1.3 , it means this person
+	is sleeping or (fell)
+	
+
+Temprature: First: If temp exceeds some value (25c ) a warning will be sent to the nurse through BLE with the
+	    actual temp value.
+	    Second: The nurse can send name of sick person through BLE and the temp value of that person will
+		    Will be sent back to her/him.
+
+BLE: 		What was used in the top. we sent the hit value (falling value) to show how hard was the fall
+		in case of a warning. the status of the person (sitting, standing, walking) can be checked
+		if asked for by nurse
+		
+
+SerialMonitor: We print the temp value in nice way so someone can come and look at it like a screen displaying
+		data of sick person. slow the printing down a bit. also the warning stuff with the value
+		
+
+Note: The board need to be in flat table because it first calibrates the acl . if it was tilted or idk, the readings will be
+	not valid
+
+

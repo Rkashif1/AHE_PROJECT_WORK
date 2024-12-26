@@ -1,0 +1,693 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 18 15:47:24 2024
+# Process ID: 6544
+# Current directory: C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1
+# Command line: vivado.exe -log Hardware_final_PmodBLE_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hardware_final_PmodBLE_0_0.tcl
+# Log file: C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/Hardware_final_PmodBLE_0_0.vds
+# Journal file: C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1\vivado.jou
+# Running On: HSHL2NBIBL050, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16893 MB
+#-----------------------------------------------------------
+source Hardware_final_PmodBLE_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1401.273 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado-library-hierarchies/vivado-library-hierarchies'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top Hardware_final_PmodBLE_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10588
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1401.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Hardware_final_PmodBLE_0_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/synth/Hardware_final_PmodBLE_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PmodBLE' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:12]
+INFO: [Synth 8-638] synthesizing module 'PmodBLE_axi_gpio_0_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/synth/PmodBLE_axi_gpio_0_0.vhd:89]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/synth/PmodBLE_axi_gpio_0_0.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'PmodBLE_axi_gpio_0_0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/synth/PmodBLE_axi_gpio_0_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'PmodBLE_axi_uart16550_0_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/synth/PmodBLE_axi_uart16550_0_0.vhd:99]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: integer 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uart16550' declared at 'c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4662' bound to instance 'U0' of component 'axi_uart16550' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/synth/PmodBLE_axi_uart16550_0_0.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4737]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'xuart' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-638] synthesizing module 'uart16550' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2318]
+INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-226] default block is never used [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDR' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3364]
+INFO: [Synth 8-638] synthesizing module 'rx16550' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-226] default block is never used [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
+INFO: [Synth 8-256] done synthesizing module 'rx16550' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-638] synthesizing module 'tx16550' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-256] done synthesizing module 'tx16550' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-226] default block is never used [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-256] done synthesizing module 'uart16550' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2318]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3939]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3939]
+INFO: [Synth 8-256] done synthesizing module 'xuart' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4737]
+INFO: [Synth 8-256] done synthesizing module 'PmodBLE_axi_uart16550_0_0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/synth/PmodBLE_axi_uart16550_0_0.vhd:99]
+WARNING: [Synth 8-7071] port 'baudoutn' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'ddis' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'dtrn' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'out1n' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'out2n' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'rtsn' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'rxrdyn' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7071] port 'txrdyn' of module 'PmodBLE_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'PmodBLE_axi_uart16550_0_0' has 35 connections declared, but only 27 given [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:294]
+INFO: [Synth 8-6157] synthesizing module 'PmodBLE_pmod_bridge_0_0' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_pmod_bridge_0_0/synth/PmodBLE_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodBLE_pmod_bridge_0_0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_pmod_bridge_0_0/synth/PmodBLE_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PmodBLE' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ipshared/e861/src/PmodBLE.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Hardware_final_PmodBLE_0_0' (0#1) [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/synth/Hardware_final_PmodBLE_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G0.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:619]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G0.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:619]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G0.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:619]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G0.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:619]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:750]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/3ed9/hdl/axi_gpio_v2_0_vh_rfs.vhd:750]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+WARNING: [Synth 8-6014] Unused sequential element Character_received_reg was removed.  [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0444/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:90]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:100]
+WARNING: [Synth 8-3848] Net in0_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:104]
+WARNING: [Synth 8-3848] Net in1_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:105]
+WARNING: [Synth 8-3848] Net in3_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:107]
+WARNING: [Synth 8-3848] Net in4_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:108]
+WARNING: [Synth 8-3848] Net in5_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:109]
+WARNING: [Synth 8-3848] Net in6_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:110]
+WARNING: [Synth 8-3848] Net in7_I in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:111]
+WARNING: [Synth 8-3848] Net out2_O in module/entity pmod_concat does not have driver. [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/ipshared/0a6f/src/pmod_concat.v:139]
+WARNING: [Synth 8-7129] Port in_top_bus_I[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_I[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_i2c_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_i2c_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_I[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_I[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in1_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in3_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in4_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in5_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in6_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in7_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out2_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[3] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[2] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_i2c_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_i2c_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_i2c_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_top_i2c_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_uart_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_O[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_O[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_T[1] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_bottom_i2c_gpio_bus_T[0] in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in2_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in3_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in4_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in5_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in6_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in7_O in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in1_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in2_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in3_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in4_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in5_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in6_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in7_T in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out1_I in module pmod_concat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Fcr[5] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Fcr[4] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Fcr[3] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Fcr[2] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Fcr[1] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Fcr[0] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[7] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[6] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[5] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[4] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[3] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[2] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[1] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rx_fifo_data_in[0] in module rx_fifo_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lcr[7] in module tx16550 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lcr[7] in module rx16550 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Lcr[6] in module rx16550 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[31] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[30] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[29] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[28] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[27] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[26] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[25] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[24] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[23] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[22] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[21] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[20] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[19] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[18] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[17] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[16] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[15] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Rclk in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Xin in module xuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[0] in module address_decoder__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[1] in module address_decoder__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[2] in module address_decoder__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1411.832 ; gain = 10.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1411.832 ; gain = 10.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1411.832 ; gain = 10.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1411.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/PmodBLE_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/PmodBLE_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/PmodBLE_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_gpio_0_0/PmodBLE_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_pmod_bridge_0_0/PmodBLE_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_pmod_bridge_0_0/PmodBLE_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/PmodBLE_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/PmodBLE_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/PmodBLE_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/src/PmodBLE_axi_uart16550_0_0/PmodBLE_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
+Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/Hardware_final_PmodBLE_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.gen/sources_1/bd/Hardware_final/ip/Hardware_final_PmodBLE_0_0/Hardware_final_PmodBLE_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Hardware_final_PmodBLE_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Hardware_final_PmodBLE_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1492.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  FDR => FDRE: 36 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1494.469 ; gain = 1.535
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uart16550_0/U0. (constraint file  C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0/inst. (constraint file  C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc, line 33).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0/U0. (constraint file  C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uart16550_0. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_gpio_0/U0/gpio_core_1/GPIO_IO_T[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_gpio_0/U0/gpio_core_1/GPIO2_IO_T[1]. (constraint file  auto generated constraint).
+WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
+WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xuart_tx_load_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'receive_state_reg' in module 'rx16550'
+INFO: [Synth 8-802] inferred FSM for state register 'transmit_state_reg' in module 'tx16550'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                             0010 |                               00
+                 sm_read |                             1000 |                               01
+                sm_write |                             0100 |                               10
+                 sm_resp |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             empty_empty |                               00 |                               00
+              empty_full |                               01 |                               01
+              full_empty |                               10 |                               10
+               full_full |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'xuart_tx_load_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0101 |                             0000
+               start_bit |                             0100 |                             0001
+               data_bit1 |                             0110 |                             0010
+               data_bit2 |                             0000 |                             0011
+               data_bit3 |                             0001 |                             0100
+               data_bit4 |                             0010 |                             0101
+               data_bit5 |                             1101 |                             0110
+               data_bit6 |                             1010 |                             0111
+               data_bit7 |                             1011 |                             1000
+               data_bit8 |                             1100 |                             1001
+              parity_bit |                             1001 |                             1010
+             frame_error |                             0011 |                             1101
+               stop_bit1 |                             1000 |                             1011
+               stop_bit2 |                             0111 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_state_reg' using encoding 'sequential' in module 'rx16550'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+               start_bit |                             0001 |                             0001
+               data_bit1 |                             0010 |                             0010
+               data_bit2 |                             0011 |                             0011
+               data_bit3 |                             0100 |                             0100
+               data_bit4 |                             0101 |                             0101
+               data_bit5 |                             0110 |                             0110
+               data_bit6 |                             0111 |                             0111
+               data_bit7 |                             1000 |                             1000
+               data_bit8 |                             1001 |                             1001
+              parity_bit |                             1010 |                             1010
+               stop_bit1 |                             1011 |                             1011
+               stop_bit2 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'tx16550'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 140   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	  13 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 43    
+	  14 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 2     
+	  13 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 14    
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 76    
+	   4 Input    1 Bit        Muxes := 6     
+	  14 Input    1 Bit        Muxes := 7     
+	   6 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                  | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[15] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[15] | 11     | 11         | 11     | 0       | 0      | 0      | 0      | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT1   |    22|
+|3     |LUT2   |    48|
+|4     |LUT3   |    46|
+|5     |LUT4   |    53|
+|6     |LUT5   |    83|
+|7     |LUT6   |   216|
+|8     |ODDR   |     1|
+|9     |SRL16E |    19|
+|10    |FDR    |    24|
+|11    |FDRE   |   314|
+|12    |FDSE   |    55|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1494.469 ; gain = 93.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:29 . Memory (MB): peak = 1494.469 ; gain = 10.559
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 1494.469 ; gain = 93.195
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1494.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FDR => FDRE: 24 instances
+
+Synth Design complete, checksum: 4dc7c124
+INFO: [Common 17-83] Releasing license: Synthesis
+159 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 1494.469 ; gain = 93.195
+INFO: [Common 17-1381] The checkpoint 'C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/Hardware_final_PmodBLE_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Hardware_final_PmodBLE_0_0, cache-ID = 2aca42c3aadb7b6b
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Hardware_Project_2024/FinalProject_Hardware/FinalProject_Hardware.runs/Hardware_final_PmodBLE_0_0_synth_1/Hardware_final_PmodBLE_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Hardware_final_PmodBLE_0_0_utilization_synth.rpt -pb Hardware_final_PmodBLE_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 15:49:47 2024...
