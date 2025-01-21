@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/kapug/try_5_hello_world/try_5_hello_world.srcs/constrs_1/new/spi.xdc rfile:../../../try_5_hello_world.srcs/constrs_1/new/spi.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+create_generated_clock -name sclk [get_pins clock_sources/inst/mmcm_adv_inst/CLKOUT2]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_output_delay -clock sclk -max 5.000 [get_ports {spi_sdi[*]}]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_output_delay -clock sclk -min -5.000 [get_ports {spi_sdi[*]}]

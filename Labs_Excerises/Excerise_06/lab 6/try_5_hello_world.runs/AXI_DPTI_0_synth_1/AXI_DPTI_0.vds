@@ -1,0 +1,747 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jan 19 17:52:40 2025
+# Process ID: 88228
+# Current directory: C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1
+# Command line: vivado.exe -log AXI_DPTI_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_DPTI_0.tcl
+# Log file: C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/AXI_DPTI_0.vds
+# Journal file: C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 16869 MB
+#-----------------------------------------------------------
+source AXI_DPTI_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 566.859 ; gain = 219.625
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/2023.2/data/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: AXI_DPTI_0
+Command: synth_design -top AXI_DPTI_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 89024
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.922 ; gain = 439.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AXI_DPTI_0' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/synth/AXI_DPTI_0.vhd:105]
+	Parameter C_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LITE_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'axi_dpti_v1_0' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:58' bound to instance 'U0' of component 'AXI_DPTI_v1_0' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/synth/AXI_DPTI_0.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'axi_dpti_v1_0' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:129]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUF_inst' to cell 'IOBUF' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:380]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:410]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 16.670000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 15 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'PLLE2_BASE_inst' to cell 'PLLE2_BASE' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:432]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'axi_dpti_v1_0_AXI_LITE' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0_AXI_LITE.vhd:5' bound to instance 'axi_dpti_v1_0_AXI_LITE_inst' of component 'axi_dpti_v1_0_AXI_LITE' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:485]
+INFO: [Synth 8-638] synthesizing module 'axi_dpti_v1_0_AXI_LITE' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0_AXI_LITE.vhd:100]
+INFO: [Synth 8-226] default block is never used [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0_AXI_LITE.vhd:281]
+INFO: [Synth 8-226] default block is never used [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0_AXI_LITE.vhd:415]
+INFO: [Synth 8-256] done synthesizing module 'axi_dpti_v1_0_AXI_LITE' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0_AXI_LITE.vhd:100]
+INFO: [Synth 8-3491] module 'HandshakeData' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/HandshakeData.vhd:70' bound to instance 'in_length_sync' of component 'HandshakeData' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:532]
+INFO: [Synth 8-638] synthesizing module 'HandshakeData' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/HandshakeData.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'HandshakeData' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/HandshakeData.vhd:85]
+INFO: [Synth 8-3491] module 'HandshakeData' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/HandshakeData.vhd:70' bound to instance 'in_control_sync' of component 'HandshakeData' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:545]
+INFO: [Synth 8-3491] module 'fifo_generator_dpti' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/synth/fifo_generator_dpti.vhd:59' bound to instance 'RX_fifo' of component 'fifo_generator_dpti' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:654]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_dpti' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/synth/fifo_generator_dpti.vhd:77]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 1 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 12 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 11 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 12 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 12 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 11 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 12 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x72 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 37 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 16 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 4 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 15 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1021 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1021 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 13 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_9' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38305' bound to instance 'U0' of component 'fifo_generator_v13_2_9' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/synth/fifo_generator_dpti.vhd:555]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_dpti' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/synth/fifo_generator_dpti.vhd:77]
+INFO: [Synth 8-3491] module 'fifo_generator_dpti' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/synth/fifo_generator_dpti.vhd:59' bound to instance 'TX_fifo' of component 'fifo_generator_dpti' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:672]
+INFO: [Synth 8-3491] module 'AXI_S_to_DPTI_converter' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_S_To_DPTI_Converter.vhd:61' bound to instance 'AXI_S_to_DPTI_inst' of component 'AXI_S_to_DPTI_converter' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:690]
+INFO: [Synth 8-638] synthesizing module 'AXI_S_to_DPTI_converter' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_S_To_DPTI_Converter.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'AXI_S_to_DPTI_converter' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_S_To_DPTI_Converter.vhd:87]
+INFO: [Synth 8-3491] module 'DPTI_to_AXI_S_converter' declared at 'c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/DPTI_To_AXI_S_Converter.vhd:68' bound to instance 'DPTI_to_AXI_S_inst' of component 'DPTI_to_AXI_S_converter' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:713]
+INFO: [Synth 8-638] synthesizing module 'DPTI_to_AXI_S_converter' [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/DPTI_To_AXI_S_Converter.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'DPTI_to_AXI_S_converter' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/DPTI_To_AXI_S_Converter.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'axi_dpti_v1_0' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_v1_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'AXI_DPTI_0' (0#1) [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/synth/AXI_DPTI_0.vhd:105]
+WARNING: [Synth 8-7129] Port pAXI_L_Length[31] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[30] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[29] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[28] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[27] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[26] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[25] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[24] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[31] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[30] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[29] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[28] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[27] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[26] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[25] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[24] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[23] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[22] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[21] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[20] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[19] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[18] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[17] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[16] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[15] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[14] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[13] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[12] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[11] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[10] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[9] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[8] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[7] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[6] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[5] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[4] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[3] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[2] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[0] in module DPTI_to_AXI_S_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pInTlast in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[31] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[30] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[29] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[28] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[27] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[26] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[25] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[24] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Length[23] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[31] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[30] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[29] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[28] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[27] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[26] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[25] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[24] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[23] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[22] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[21] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[20] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[19] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[18] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[17] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[16] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[15] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[14] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[13] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[12] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[11] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[10] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[9] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[8] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[7] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[6] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[5] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[4] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[3] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[2] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pAXI_L_Control[1] in module AXI_S_to_DPTI_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1703.840 ; gain = 688.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1703.840 ; gain = 688.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1703.840 ; gain = 688.023
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1703.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti.xdc] for cell 'U0/RX_fifo/U0'
+Finished Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti.xdc] for cell 'U0/RX_fifo/U0'
+Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti.xdc] for cell 'U0/TX_fifo/U0'
+Finished Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti.xdc] for cell 'U0/TX_fifo/U0'
+Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/AXI_DPTI_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/timing.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/timing.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXI_DPTI_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXI_DPTI_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti_clocks.xdc] for cell 'U0/RX_fifo/U0'
+Finished Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti_clocks.xdc] for cell 'U0/RX_fifo/U0'
+Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti_clocks.xdc] for cell 'U0/TX_fifo/U0'
+Finished Parsing XDC File [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti_clocks.xdc] for cell 'U0/TX_fifo/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/kapug/try_5_hello_world/try_5_hello_world.gen/sources_1/ip/AXI_DPTI_0/src/fifo_generator_dpti/fifo_generator_dpti_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXI_DPTI_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXI_DPTI_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXI_DPTI_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXI_DPTI_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXI_DPTI_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXI_DPTI_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 12 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1798.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1798.199 ; gain = 0.004
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0. (constraint file  C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0. (constraint file  C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/RX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/TX_fifo/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft'
+INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               10 |                               10
+       both_stages_valid |                               11 |                               11
+            stage2_valid |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      4 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 46    
++---Registers : 
+	               37 Bit    Registers := 4     
+	               32 Bit    Registers := 13    
+	               23 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 36    
+	                2 Bit    Registers := 26    
+	                1 Bit    Registers := 69    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   23 Bit        Muxes := 1     
+	   5 Input   23 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 23    
+	   5 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+------------------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name   | RTL Object                                                                               | Inference      | Size (Depth x Width) | Primitives  | 
++--------------+------------------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|U0/RX_fifo/U0 | inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 37              | RAM32M x 7  | 
+|U0/TX_fifo/U0 | inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 37              | RAM32M x 7  | 
++--------------+------------------------------------------------------------------------------------------+----------------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------+------------------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name   | RTL Object                                                                               | Inference      | Size (Depth x Width) | Primitives  | 
++--------------+------------------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|U0/RX_fifo/U0 | inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 37              | RAM32M x 7  | 
+|U0/TX_fifo/U0 | inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 37              | RAM32M x 7  | 
++--------------+------------------------------------------------------------------------------------------+----------------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:44 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:44 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    30|
+|3     |LUT1       |    60|
+|4     |LUT2       |   115|
+|5     |LUT3       |   100|
+|6     |LUT4       |    58|
+|7     |LUT5       |    92|
+|8     |LUT6       |    58|
+|9     |PLLE2_BASE |     1|
+|10    |RAM32M     |    12|
+|11    |RAM32X1D   |     2|
+|12    |FDCE       |   254|
+|13    |FDPE       |    61|
+|14    |FDRE       |   396|
+|15    |FDSE       |     2|
+|16    |IOBUF      |     8|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:44 . Memory (MB): peak = 1798.199 ; gain = 782.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 948 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:41 . Memory (MB): peak = 1798.199 ; gain = 688.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:44 . Memory (MB): peak = 1798.199 ; gain = 782.383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1798.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete | Checksum: cbff2de4
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:50 . Memory (MB): peak = 1798.199 ; gain = 1186.590
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1798.199 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/AXI_DPTI_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP AXI_DPTI_0, cache-ID = 1dbb1623fdde4807
+INFO: [Coretcl 2-1174] Renamed 70 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1798.199 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1/AXI_DPTI_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXI_DPTI_0_utilization_synth.rpt -pb AXI_DPTI_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 19 17:53:52 2025...

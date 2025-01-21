@@ -1,0 +1,9 @@
+PmodBLE_0:
+- PmodBLE
+- None
+axi_iic_0:
+- axi_iic
+- iic
+axi_uartlite_0:
+- axi_uartlite
+- uartlite

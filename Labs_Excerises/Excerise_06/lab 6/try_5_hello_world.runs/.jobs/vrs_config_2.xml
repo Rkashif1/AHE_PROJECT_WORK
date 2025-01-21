@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="try_5_at_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/try_5_at_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="try_5_at_xbar_0_synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/try_5_at_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="try_5_at_clk_wiz_1_0_synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/try_5_at_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_DPTI_0_synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/AXI_DPTI_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="try_5_at_PmodOLEDrgb_0_0_synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/try_5_at_PmodOLEDrgb_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="try_5_at_axi_quad_spi_0_0_synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/try_5_at_axi_quad_spi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="try_5_at_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="try_5_at_xbar_0_synth_1"/>
+		<Parent Id="try_5_at_clk_wiz_1_0_synth_1"/>
+		<Parent Id="AXI_DPTI_0_synth_1"/>
+		<Parent Id="try_5_at_PmodOLEDrgb_0_0_synth_1"/>
+		<Parent Id="try_5_at_axi_quad_spi_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/kapug/try_5_hello_world/try_5_hello_world.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="try_5_at_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="try_5_at_xbar_0_synth_1"/>
+		<Parent Id="try_5_at_clk_wiz_1_0_synth_1"/>
+		<Parent Id="AXI_DPTI_0_synth_1"/>
+		<Parent Id="try_5_at_PmodOLEDrgb_0_0_synth_1"/>
+		<Parent Id="try_5_at_axi_quad_spi_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+
